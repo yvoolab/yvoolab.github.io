@@ -119,5 +119,22 @@
     Work with me: <a href="mailto:yvoolab@gmail.com">yvoolab@gmail.com</a>
   </footer>
 </main>
+
+<script>
+// Attribution pass-through: each profile links here as /?s=<channel>.
+// We forward that channel onto outbound UTMs so Gumroad/Notion still show
+// which platform the visitor came from — the hub must not become a black hole.
+(function () {
+  var s = new URLSearchParams(location.search).get('s');
+  if (!s || !/^[a-z0-9_-]{1,24}$/i.test(s)) return;   // ignore junk/injection
+  for (var a of document.querySelectorAll('a[href^="http"]')) {
+    var u = new URL(a.href);
+    if (u.searchParams.has('utm_source')) continue;    // never clobber a hand-set UTM
+    u.searchParams.set('utm_source', s);
+    u.searchParams.set('utm_medium', 'linkhub');
+    a.href = u.toString();
+  }
+})();
+</script>
 </body>
 </html>
