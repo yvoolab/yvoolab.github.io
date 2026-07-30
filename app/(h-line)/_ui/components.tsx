@@ -134,6 +134,7 @@ export function MenuCardItem({ card }: { card: MenuCard }) {
 // 小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15
 const CONTACTS: Array<{
   label: string;
+  ariaLabel?: string;
   href: string;
   external?: boolean;
   /** Instagram 需要一枚 <linearGradient> id；其余图标忽略此参数 */
