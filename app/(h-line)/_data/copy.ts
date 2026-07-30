@@ -18,12 +18,12 @@ export const SHANGHU_HERO_TITLE_LINE2 = "听得懂您的 Yvoolab。";
 
 // 验收修单 #5：主钮拆分——钮内短句 + 钮下小字
 export const DIAGNOSIS_CTA_LABEL = "说说您最耗人工的那件事";
-export const DIAGNOSIS_CTA_SUB = "15 分钟告诉您能不能做、大概怎么做，不收费";
+export const DIAGNOSIS_CTA_SUB = "15 分钟免费咨询：告诉您能不能做、大概怎么做";
 export const DIAGNOSIS_MAIL_SUBJECT = "免费诊断";
 
 // Del 2026-07-30 令补回：诊断邀约全式（例子三枚沿信稿 v2.1 已审句 + 总则「用您自己的话」+ 菜单第 9 条尾句拼装，无新造文案）
 export const DIAGNOSIS_FULL_INVITE =
-  "您不用懂技术，也不用会说需求。就用您自己的话讲：您每天在做什么？哪件事天天重复？哪件最耗人工？——是回评价、催账款、看法语公文，还是别的。能不能自动化、大概怎么做、值不值得，判断是我的事：15 分钟给您个准话，不收费。要做的话出书面方案和一口价，您再定。";
+  "您不用懂技术，也不用会说需求。就用您自己的话讲：您每天在做什么？哪件事天天重复？哪件最耗人工？——是回评价、催账款、看法语公文，还是别的。能不能自动化、大概怎么做、值不值得，判断是我的事：15 分钟免费咨询，给您个准话。要做的话出书面方案和一口价，您再定。";
 
 // 半价横幅 (spec §2 总门面·item2)
 export const HALF_PRICE_BANNER = "您店的头两单半价，办完留句真实评价就行。";
@@ -47,7 +47,7 @@ export const FRENCH_SUMMARY = "Assistant administratif & IA pour commerçants �
 
 // 通用诊断邀约链接（服务页 hero 次行）验收修单 #8
 export const DIAGNOSIS_LINK_TEXT =
-  "您的行业不在上面？说说您最耗人工的那件事——免费替您判能不能做。";
+  "您的行业不在上面？说说您最耗人工的那件事——15 分钟免费咨询，替您判能不能做。";
 
 // 验收修单 #9：每页页脚回链免费小工具
 export const TOOLS_FOOTER_TEXT = "先试试我们的免费小工具";
