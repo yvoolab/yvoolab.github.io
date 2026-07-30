@@ -16,6 +16,8 @@ export type HService = {
   cta: string;
   /** noun extracted from the CTA sentence, for the 3-step "您发 X" slot */
   ctaSubject: string;
+  /** mailto subject line for this service's primary CTA (验收修单 #4) */
+  mailSubject: string;
   priceChipPrimary: string;
   /** only set where the poster text explicitly states a 头两单 number/半价 */
   priceChipSecondary?: string;
@@ -34,6 +36,7 @@ export const services: HService[] = [
     ],
     cta: "把店名发我，先免费替你写一条看看，觉得行再谈钱。",
     ctaSubject: "店名",
+    mailSubject: "差评回复",
     priceChipPrimary: "49 欧",
     priceChipSecondary: "头两单 25 欧",
   },
@@ -49,6 +52,7 @@ export const services: HService[] = [
     ],
     cta: "发店名，我把你商家页缺的几样列成清单给你，免费。",
     ctaSubject: "店名",
+    mailSubject: "商家页整容",
     priceChipPrimary: "99 欧",
     priceChipSecondary: "头两单半价",
   },
@@ -65,6 +69,7 @@ export const services: HService[] = [
     ],
     cta: "把你现在用的报价单拍照发我（金额、客户名遮住，只看格式），免费指出缺哪几项。",
     ctaSubject: "报价单照片（金额、客户名遮住）",
+    mailSubject: "报价单+催款信",
     priceChipPrimary: "99 欧起",
   },
   {
@@ -79,6 +84,7 @@ export const services: HService[] = [
     ],
     cta: "把你最近一封还没回的询盘转发给我，免费替你拟好回信。",
     ctaSubject: "还没回的询盘邮件",
+    mailSubject: "询盘秒回",
     priceChipPrimary: "119 欧",
   },
   {
@@ -93,6 +99,7 @@ export const services: HService[] = [
     ],
     cta: "把店名发我，先免费查一条——AI 推不推荐你，一句话告诉你；全套体检（说你什么、缺什么、怎么补）再谈钱。",
     ctaSubject: "店名",
+    mailSubject: "AI 推荐体检",
     priceChipPrimary: "49 欧",
     priceChipSecondary: "头两单半价",
   },
@@ -109,6 +116,7 @@ export const services: HService[] = [
     ],
     cta: "把你店的外卖链接发我，免费指出最亏的三处。",
     ctaSubject: "外卖链接",
+    mailSubject: "外卖页优化",
     priceChipPrimary: "79 欧/平台",
     priceChipSecondary: "头两单半价",
   },
@@ -124,6 +132,7 @@ export const services: HService[] = [
     ],
     cta: "回「补贴」两个字，先把官方查询入口免费发你。",
     ctaSubject: "「补贴」两字",
+    mailSubject: "商户找补贴",
     priceChipPrimary: "49 欧起",
   },
 ];
@@ -133,14 +142,15 @@ export const zicha: HService = {
   path: "/zicha",
   title: "该拿没拿的补助、多交了的税——你有没有？",
   subtitle:
-    "光「在职补助」（prime d'activité）一项，符合条件的人里约一半没去领（法国官方统计）。不开店也用得上这一张。",
+    "光「在职补助」（prime d'activité）一项，符合条件的人里约一半没去领（法国官方统计）。不开店也用得上。",
   sellingPoints: [
     "你本人、店员、家里人都行：该领没领的补助、能省没省的税，一次帮你查清——跟居留、入籍有没有关系，报告里也写清楚",
     "一份中文报告说明白：有什么、条件是什么、去哪申去哪报——你自己去办，我们不经手你的钱，也不要你的证件、账号和密码",
-    "报告 29 欧，您店的头两单 15 欧",
+    "报告 29 欧，头两单 15 欧",
   ],
   cta: "回「自查」两个字，一分钟几个问题，先免费告诉你值不值得查——不值得查也照实说。",
   ctaSubject: "「自查」两字",
+  mailSubject: "自查",
   priceChipPrimary: "29 欧",
   priceChipSecondary: "头两单 15 欧",
 };

@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { CtaButton, Divider, MenuCardItem } from "../_ui/components";
+import { CtaBlock, Divider, MenuCardItem } from "../_ui/components";
 import { oneTimeCards, persistentCard } from "../_data/services";
 import {
   CONTACT_LINE,
-  DIAGNOSIS_CTA,
+  DIAGNOSIS_CTA_LABEL,
+  DIAGNOSIS_CTA_SUB,
+  DIAGNOSIS_MAIL_SUBJECT,
   EXTRA_LINE,
   FRENCH_LABEL,
   FRENCH_SUMMARY,
   HALF_PRICE_BANNER,
   SHANGHU_HERO_SUBHEAD,
-  SLOGAN,
+  SHANGHU_HERO_TITLE_LINE1,
+  SHANGHU_HERO_TITLE_LINE2,
   TRUST_ITEMS,
+  mailtoWithSubject,
 } from "../_data/copy";
 
 export const metadata: Metadata = {
@@ -28,13 +32,19 @@ export default function ShanghuPage() {
     <div className="mx-auto max-w-5xl px-6 py-16">
       {/* 1 · Hero */}
       <section id="zhenduan">
-        <h1 className="hl-display text-5xl leading-tight sm:text-6xl">{SLOGAN}</h1>
+        <h1 className="hl-display text-5xl leading-tight sm:text-6xl">
+          {SHANGHU_HERO_TITLE_LINE1}
+          <br />
+          {SHANGHU_HERO_TITLE_LINE2}
+        </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
           {SHANGHU_HERO_SUBHEAD}
         </p>
-        <div className="mt-9">
-          <CtaButton href="mailto:yvoolab@gmail.com">{DIAGNOSIS_CTA}</CtaButton>
-        </div>
+        <CtaBlock
+          href={mailtoWithSubject(DIAGNOSIS_MAIL_SUBJECT)}
+          label={DIAGNOSIS_CTA_LABEL}
+          sub={DIAGNOSIS_CTA_SUB}
+        />
         <p className="mt-6 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
           {CONTACT_LINE}
         </p>

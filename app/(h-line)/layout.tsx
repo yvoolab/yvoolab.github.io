@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "../globals.css";
 import "./hline.css";
-import { CONTACT_LINE, SLOGAN, DISCLAIMER } from "./_data/copy";
+import { CONTACT_LINE, SLOGAN, DISCLAIMER, TOOLS_FOOTER_TEXT } from "./_data/copy";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yvoolab.github.io"),
@@ -40,6 +40,11 @@ export default function HLineLayout({ children }: { children: React.ReactNode })
             <p className="hl-display text-2xl leading-snug">{SLOGAN}</p>
             <p className="mt-4 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
               {CONTACT_LINE}
+            </p>
+            <p className="mt-3 text-sm">
+              <Link href="/tools" className="underline underline-offset-4">
+                {TOOLS_FOOTER_TEXT}
+              </Link>
             </p>
             <p className="mt-8 text-xs leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
               {DISCLAIMER}

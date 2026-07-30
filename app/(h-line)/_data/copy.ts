@@ -6,14 +6,20 @@ export const CONTACT_LINE =
 export const SLOGAN = "用得起的 AI，听得懂您的 Yvoolab。";
 
 export const DISCLAIMER =
-  "说明：这项服务是代读、代写与整理行政/商务信件的文书协助（écrivain public 性质），不是法律、会计或税务咨询。我会根据您提供的资料和文件帮您读懂信件、写回复草稿；但信中的期限、金额、官方信息核实无误，以及最终怎么处理，责任在您自己——重要法律、税务问题建议另找专业人士确认。这是商户与商户之间的服务关系；除非出现重大过失或故意行为，我方责任以我们书面约定的范围为限。";
+  "说明：这项服务是代读、代写与整理行政/商务信件的文书协助（écrivain public 性质），不是法律、会计或税务咨询。我们会根据您提供的资料和文件帮您读懂信件、写回复草稿；但信中的期限、金额、官方信息核实无误，以及最终怎么处理，责任在您自己——重要法律、税务问题建议另找专业人士确认。这是商户与商户之间的服务关系；除非出现重大过失或故意行为，我方责任以我们书面约定的范围为限。";
 
 // Hero copy for /shanghu (spec §2 总门面·item1)
 export const SHANGHU_HERO_SUBHEAD =
   "巴黎华人商户的 AI 帮手——差评回复、催款信、法语公文、找补贴，AI 打草稿，您确认后才发出。";
 
-export const DIAGNOSIS_CTA =
-  "说说您最耗人工的那件事——15 分钟告诉您能不能做、大概怎么做，不收费";
+// 验收修单 #6：hero 标题强制断行于「AI，」后；页脚 SLOGAN 不动，故与 SLOGAN 分开两个常量
+export const SHANGHU_HERO_TITLE_LINE1 = "用得起的 AI，";
+export const SHANGHU_HERO_TITLE_LINE2 = "听得懂您的 Yvoolab。";
+
+// 验收修单 #5：主钮拆分——钮内短句 + 钮下小字
+export const DIAGNOSIS_CTA_LABEL = "说说您最耗人工的那件事";
+export const DIAGNOSIS_CTA_SUB = "15 分钟告诉您能不能做、大概怎么做，不收费";
+export const DIAGNOSIS_MAIL_SUBJECT = "免费诊断";
 
 // 半价横幅 (spec §2 总门面·item2)
 export const HALF_PRICE_BANNER = "您店的头两单半价，办完留句真实评价就行。";
@@ -35,5 +41,14 @@ export const EXTRA_LINE =
 export const FRENCH_LABEL = "En français";
 export const FRENCH_SUMMARY = "Assistant administratif & IA pour commerçants — Paris.";
 
-// 通用诊断邀约链接（服务页 hero 次行）
-export const DIAGNOSIS_LINK_TEXT = "您的行业不在上面？说说您最耗人工的那件事，免费判";
+// 通用诊断邀约链接（服务页 hero 次行）验收修单 #8
+export const DIAGNOSIS_LINK_TEXT =
+  "您的行业不在上面？说说您最耗人工的那件事——免费替您判能不能做。";
+
+// 验收修单 #9：每页页脚回链免费小工具
+export const TOOLS_FOOTER_TEXT = "先试试我们的免费小工具";
+
+// 验收修单 #4：主钮 mailto 统一构造（yvoolab@gmail.com + 预填 subject）
+export function mailtoWithSubject(subject: string): string {
+  return `mailto:yvoolab@gmail.com?subject=${encodeURIComponent(subject)}`;
+}

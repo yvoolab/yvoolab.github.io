@@ -27,6 +27,28 @@ export function CtaButton({ href, children }: { href: string; children: React.Re
   );
 }
 
+// 验收修单 #3/#5：主钮拆分为「钮文案」+「钮下小字」两截，钮 href 单独传入
+export function CtaBlock({
+  href,
+  label,
+  sub,
+}: {
+  href: string;
+  label: string;
+  sub?: string;
+}) {
+  return (
+    <div className="mt-8">
+      <CtaButton href={href}>{label}</CtaButton>
+      {sub && (
+        <p className="mt-3 text-sm leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
+          {sub}
+        </p>
+      )}
+    </div>
+  );
+}
+
 export function SellingPoints({ points }: { points: readonly string[] }) {
   return (
     <ul className="mt-10 space-y-6">
@@ -47,9 +69,7 @@ export function ProcessSteps({ subject }: { subject: string }) {
   ];
   return (
     <div className="hl-hairline mt-16 border-t pt-10">
-      <h2 className="hl-display text-lg" style={{ color: "var(--hl-accent)" }}>
-        怎么进行
-      </h2>
+      <h2 className="hl-display text-lg">怎么进行</h2>
       <ol className="mt-6 grid gap-6 sm:grid-cols-3">
         {steps.map((s, i) => (
           <li key={i} className="hl-panel rounded-sm p-5">
