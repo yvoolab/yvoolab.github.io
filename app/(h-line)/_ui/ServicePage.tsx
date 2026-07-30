@@ -26,7 +26,7 @@ export function ServicePage({
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       {/* Hero */}
-      <h1 className="hl-display text-4xl leading-tight sm:text-5xl">{service.title}</h1>
+      <h1 className="hl-display text-3xl leading-tight sm:text-4xl">{service.title}</h1>
       <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
         {service.subtitle}
       </p>

@@ -127,3 +127,30 @@ export function MenuCardItem({ card }: { card: MenuCard }) {
     </li>
   );
 }
+
+// Del 2026-07-30: 联系方式全挂真链（序：邮箱→FB→IG→小红书；小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15）
+const CONTACTS: Array<{ label: string; href: string; external?: boolean }> = [
+  { label: "邮箱 yvoolab@gmail.com", href: "mailto:yvoolab@gmail.com" },
+  { label: "Facebook「Yvoo Lab」", href: "https://www.facebook.com/yvoolab", external: true },
+  { label: "Instagram @yvoolab", href: "https://www.instagram.com/yvoolab", external: true },
+  { label: "小红书 @AI一武", href: "https://www.xiaohongshu.com/user/profile/695676df000000002a036760", external: true },
+];
+
+export function ContactLinks({ className = "" }: { className?: string }) {
+  return (
+    <p className={`text-sm ${className}`} style={{ color: "var(--hl-fg-muted)" }}>
+      {CONTACTS.map((c, i) => (
+        <span key={c.href}>
+          {i > 0 && " · "}
+          <a
+            href={c.href}
+            className="underline underline-offset-4 hover:opacity-80"
+            {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          >
+            {c.label}
+          </a>
+        </span>
+      ))}
+    </p>
+  );
+}

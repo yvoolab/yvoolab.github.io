@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { CtaBlock, Divider, MenuCardItem } from "../_ui/components";
+import { ContactLinks, CtaBlock, Divider, MenuCardItem } from "../_ui/components";
 import { oneTimeCards, persistentCard } from "../_data/services";
 import {
-  CONTACT_LINE,
   DIAGNOSIS_CTA_LABEL,
   DIAGNOSIS_FULL_INVITE,
   DIAGNOSIS_CTA_SUB,
@@ -33,7 +32,7 @@ export default function ShanghuPage() {
     <div className="mx-auto max-w-5xl px-6 py-16">
       {/* 1 · Hero */}
       <section id="zhenduan">
-        <h1 className="hl-display text-5xl leading-tight sm:text-6xl">
+        <h1 className="hl-display text-4xl leading-tight sm:text-5xl">
           {SHANGHU_HERO_TITLE_LINE1}
           <br />
           {SHANGHU_HERO_TITLE_LINE2}
@@ -41,17 +40,15 @@ export default function ShanghuPage() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
           {SHANGHU_HERO_SUBHEAD}
         </p>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed">
-          {DIAGNOSIS_FULL_INVITE}
-        </p>
         <CtaBlock
           href={mailtoWithSubject(DIAGNOSIS_MAIL_SUBJECT)}
           label={DIAGNOSIS_CTA_LABEL}
           sub={DIAGNOSIS_CTA_SUB}
         />
-        <p className="mt-6 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
-          {CONTACT_LINE}
+        <p className="mt-5 max-w-2xl text-base leading-relaxed">
+          {DIAGNOSIS_FULL_INVITE}
         </p>
+        <ContactLinks className="mt-6" />
       </section>
 
       <Divider />

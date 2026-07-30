@@ -45,3 +45,13 @@
 .hline-theme .hl-dot {
   background: var(--hl-accent);
 }
+
+/* Del 2026-07-30: 桌面小字过小——text-sm/text-xs 在 hline 域内各升一档 */
+.hline-theme .text-sm {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.hline-theme .text-xs {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
