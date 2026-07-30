@@ -16,15 +16,21 @@ export default function HLineLayout({ children }: { children: React.ReactNode })
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=EB+Garamond:wght@500&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="hline-theme min-h-screen">
         <header className="border-b hl-hairline">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
-            <Link href="/shanghu" className="hl-display text-xl">
-              Yvoolab
+            <Link href="/shanghu" className="hl-logo" aria-label="Yvoolab">
+              <span className="hl-logo-word">Yvoolab</span>
+              <span className="hl-logo-rule">
+                <span className="hl-logo-rule-w">
+                  <span className="hl-logo-ghost">Yvoolab</span>
+                </span>
+                <span className="hl-logo-rule-k" />
+              </span>
             </Link>
             <span className="text-xs tracking-[0.2em]" style={{ color: "var(--hl-fg-muted)" }}>
               PARIS

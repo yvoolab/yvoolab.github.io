@@ -195,7 +195,7 @@ const CONTACTS: Array<{
   },
   {
     label: "小红书",
-    href: "https://www.xiaohongshu.com/user/profile/695676df000000002a036760",
+    href: "https://www.xiaohongshu.com/user/profile/5572a33a8a75e12cefdef9a2",
     external: true,
     icon: () => (
       // 小红书红圆角横排底 + 白字
@@ -218,12 +218,12 @@ const CONTACTS: Array<{
 ];
 
 // 验收修单 #11：页脚抽成可传参组件，让 /zicha 能传入不同免责声明文本而不复制整段页脚
-export function Footer({ disclaimer }: { disclaimer: string }) {
+export function Footer({ disclaimer, showBrand = true }: { disclaimer: string; showBrand?: boolean }) {
   return (
     <footer className="mt-24 border-t hl-hairline">
       <div className="mx-auto max-w-5xl px-6 py-12">
-        <p className="hl-display text-2xl leading-snug">{SLOGAN}</p>
-        <ContactLinks className="mt-4" />
+        {showBrand && <p className="hl-display text-2xl leading-snug">{SLOGAN}</p>}
+        {showBrand && <ContactLinks className="mt-4" />}
         <p className="mt-3 text-sm">
           <Link href="/tools" className="underline underline-offset-4">
             {TOOLS_FOOTER_TEXT}

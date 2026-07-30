@@ -55,3 +55,48 @@
   font-size: 0.875rem;
   line-height: 1.6;
 }
+
+/* Del 2026-07-30 定稿 logo：红块 2.2:1 · EB Garamond 白字 · 白线齐字宽后转炭黑 · 字线组居中左对齐 */
+.hline-theme .hl-logo {
+  background: var(--hl-accent);
+  color: #fff;
+  width: 121px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 13px;
+  box-sizing: border-box;
+  border-radius: 1px;
+  font-family: "EB Garamond", Georgia, serif;
+  text-decoration: none;
+}
+.hline-theme .hl-logo-word {
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.hline-theme .hl-logo-rule {
+  display: flex;
+  height: 1px;
+  margin-top: 5px;
+  width: 100%;
+}
+.hline-theme .hl-logo-rule-w {
+  background: #fff;
+  height: 1px;
+}
+.hline-theme .hl-logo-ghost {
+  display: block;
+  font-size: 19px;
+  letter-spacing: 0.02em;
+  line-height: 0;
+  height: 1px;
+  overflow: hidden;
+  color: transparent;
+}
+.hline-theme .hl-logo-rule-k {
+  background: #2b2725;
+  height: 1px;
+  flex: 1;
+}

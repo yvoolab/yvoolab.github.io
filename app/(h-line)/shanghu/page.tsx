@@ -109,7 +109,7 @@ export default function ShanghuPage() {
         <span style={{ color: "var(--hl-fg-muted)" }}>{FRENCH_SUMMARY}</span>
       </section>
     </div>
-    <Footer disclaimer={DISCLAIMER} />
+    <Footer disclaimer={DISCLAIMER} showBrand={false} />
     </>
   );
 }
