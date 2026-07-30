@@ -1,14 +1,15 @@
 import Link from "next/link";
 import type { HService } from "../_data/services";
 import { services } from "../_data/services";
-import { CtaBlock, OtherServices, PriceChip, ProcessSteps, SellingPoints } from "./components";
-import { DIAGNOSIS_LINK_TEXT, mailtoWithSubject } from "../_data/copy";
+import { CtaBlock, Footer, OtherServices, PriceChip, ProcessSteps, SellingPoints } from "./components";
+import { DIAGNOSIS_LINK_TEXT, DISCLAIMER, mailtoWithSubject } from "../_data/copy";
 
 export function ServicePage({
   service,
   frenchTagline,
   footerNote,
   ctaOverride,
+  disclaimer = DISCLAIMER,
 }: {
   service: HService;
   /** 一句法语定位行 (spec §2 服务页·"候 Del" 措辞) — 未定稿时留空,不编造商务文案 */
@@ -17,6 +18,8 @@ export function ServicePage({
   footerNote?: { text: string; href: string };
   /** 验收修单 #3：/zicha 主钮拆分为专属短句 + 小字，覆盖默认 service.cta */
   ctaOverride?: { label: string; sub: string };
+  /** 验收修单 #11：/zicha 页脚免责变体，覆盖默认全站文本 */
+  disclaimer?: string;
 }) {
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 4);
   const ctaLabel = ctaOverride?.label ?? service.cta;
@@ -24,6 +27,7 @@ export function ServicePage({
   const ctaHref = mailtoWithSubject(service.mailSubject);
 
   return (
+    <>
     <div className="mx-auto max-w-3xl px-6 py-16">
       {/* Hero */}
       <h1 className="hl-display text-3xl leading-tight sm:text-4xl">{service.title}</h1>
@@ -65,5 +69,7 @@ export function ServicePage({
         </p>
       )}
     </div>
+    <Footer disclaimer={disclaimer} />
+    </>
   );
 }

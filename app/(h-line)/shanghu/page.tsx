@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { ContactLinks, CtaBlock, Divider, MenuCardItem } from "../_ui/components";
+import { ContactLinks, CtaBlock, Divider, Footer, MenuCardItem } from "../_ui/components";
 import { oneTimeCards, persistentCard } from "../_data/services";
 import {
   DIAGNOSIS_CTA_LABEL,
   DIAGNOSIS_FULL_INVITE,
   DIAGNOSIS_CTA_SUB,
   DIAGNOSIS_MAIL_SUBJECT,
+  DISCLAIMER,
   EXTRA_LINE,
   FRENCH_LABEL,
   FRENCH_SUMMARY,
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 
 export default function ShanghuPage() {
   return (
+    <>
     <div className="mx-auto max-w-5xl px-6 py-16">
       {/* 1 · Hero */}
       <section id="zhenduan">
@@ -107,5 +109,7 @@ export default function ShanghuPage() {
         <span style={{ color: "var(--hl-fg-muted)" }}>{FRENCH_SUMMARY}</span>
       </section>
     </div>
+    <Footer disclaimer={DISCLAIMER} />
+    </>
   );
 }

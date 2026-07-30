@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { useId } from "react";
 import type { HService, MenuCard } from "../_data/services";
+import { SLOGAN, TOOLS_FOOTER_TEXT } from "../_data/copy";
 
 export function Divider() {
   return <hr className="hl-hairline my-16 border-t" />;
@@ -122,22 +124,36 @@ export function MenuCardItem({ card }: { card: MenuCard }) {
         href={card.href}
         className="mt-4 inline-block text-sm underline underline-offset-4"
       >
-        {card.external ? "联系咨询" : "查看详情"}
+        {card.external ? "联系咨询" : "点击查看详情"}
       </Link>
     </li>
   );
 }
 
-// Del 2026-07-30: 联系方式全挂真链，改图标行（图标引点·小字兜底识别）
+// Del 2026-07-30 亲定：联系图标改各自品牌本色实色图标（非白色玻璃质感），下缀小字名不变
 // 小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15
-const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: React.ReactNode }> = [
+const CONTACTS: Array<{
+  label: string;
+  href: string;
+  external?: boolean;
+  /** Instagram 需要一枚 <linearGradient> id；其余图标忽略此参数 */
+  icon: (gradId: string) => React.ReactNode;
+}> = [
   {
     label: "邮箱",
     href: "mailto:yvoolab@gmail.com",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
-        <rect x="2.5" y="5" width="19" height="14" rx="1.5" />
-        <path d="M3 6.5 12 13l9-6.5" />
+    icon: () => (
+      // Gmail 红信封
+      <svg viewBox="0 0 24 24" aria-hidden>
+        <rect x="1" y="4" width="22" height="16" rx="2.5" fill="#EA4335" />
+        <path
+          d="M2 5.4 12 13l10-7.6"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     ),
   },
@@ -145,10 +161,14 @@ const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: R
     label: "Facebook",
     href: "https://www.facebook.com/yvoolab",
     external: true,
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
-        <circle cx="12" cy="12" r="9.5" />
-        <path d="M14.8 8.2h-1.6c-.7 0-1.2.5-1.2 1.2v1.6h2.6l-.4 2.4h-2.2v6" />
+    icon: () => (
+      // Facebook 蓝圆底白 f
+      <svg viewBox="0 0 24 24" aria-hidden>
+        <circle cx="12" cy="12" r="11" fill="#1877F2" />
+        <path
+          d="M14.7 8.6h-1.4c-.5 0-.9.4-.9.9v1.5h2.2l-.3 2.2h-1.9V19h-2.3v-5.8H8.7v-2.2h1.7V9.2c0-1.7 1.1-2.9 2.7-2.9h1.9v2.3z"
+          fill="#fff"
+        />
       </svg>
     ),
   },
@@ -156,11 +176,20 @@ const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: R
     label: "Instagram",
     href: "https://www.instagram.com/yvoolab",
     external: true,
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
-        <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="17" cy="7" r="0.6" fill="currentColor" stroke="none" />
+    icon: (gradId) => (
+      // 官方渐变圆角方框 + 白色相机纹
+      <svg viewBox="0 0 24 24" aria-hidden>
+        <defs>
+          <linearGradient id={gradId} x1="0" y1="24" x2="24" y2="0">
+            <stop offset="0" stopColor="#F58529" />
+            <stop offset="0.5" stopColor="#DD2A7B" />
+            <stop offset="1" stopColor="#8134AF" />
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="22" height="22" rx="6" fill={`url(#${gradId})`} />
+        <rect x="6.5" y="6.5" width="11" height="11" rx="3" fill="none" stroke="#fff" strokeWidth="1.6" />
+        <circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" strokeWidth="1.6" />
+        <circle cx="16.3" cy="7.7" r="1" fill="#fff" />
       </svg>
     ),
   },
@@ -168,15 +197,16 @@ const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: R
     label: "小红书",
     href: "https://www.xiaohongshu.com/user/profile/695676df000000002a036760",
     external: true,
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
-        <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
+    icon: () => (
+      // 小红书红圆角横排底 + 白字
+      <svg viewBox="0 0 24 24" aria-hidden>
+        <rect x="1" y="6" width="22" height="12" rx="3" fill="#FF2442" />
         <text
           x="12"
-          y="14.9"
+          y="14.7"
           textAnchor="middle"
-          fontSize="6.2"
-          fill="currentColor"
+          fontSize="6.4"
+          fill="#fff"
           stroke="none"
           fontFamily="inherit"
         >
@@ -187,7 +217,31 @@ const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: R
   },
 ];
 
+// 验收修单 #11：页脚抽成可传参组件，让 /zicha 能传入不同免责声明文本而不复制整段页脚
+export function Footer({ disclaimer }: { disclaimer: string }) {
+  return (
+    <footer className="mt-24 border-t hl-hairline">
+      <div className="mx-auto max-w-5xl px-6 py-12">
+        <p className="hl-display text-2xl leading-snug">{SLOGAN}</p>
+        <ContactLinks className="mt-4" />
+        <p className="mt-3 text-sm">
+          <Link href="/tools" className="underline underline-offset-4">
+            {TOOLS_FOOTER_TEXT}
+          </Link>
+        </p>
+        <p className="mt-8 text-xs leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
+          {disclaimer}
+        </p>
+      </div>
+    </footer>
+  );
+}
+
 export function ContactLinks({ className = "" }: { className?: string }) {
+  // ContactLinks 在同一页可渲染两次（/shanghu hero + 页脚），Instagram 的
+  // <linearGradient> id 须逐实例唯一，否则重复 id 违规；useId() 结果含冒号，
+  // 用作 url(#id) 引用前须去掉。
+  const gradId = "hl-ig-" + useId().replace(/:/g, "");
   return (
     <div className={`flex flex-wrap items-start gap-7 ${className}`}>
       {CONTACTS.map((c) => (
@@ -199,7 +253,7 @@ export function ContactLinks({ className = "" }: { className?: string }) {
           style={{ color: "var(--hl-fg)" }}
           {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
-          <span className="block h-7 w-7">{c.icon}</span>
+          <span className="block h-7 w-7">{c.icon(gradId)}</span>
           <span className="text-xs" style={{ color: "var(--hl-fg-muted)" }}>
             {c.label}
           </span>

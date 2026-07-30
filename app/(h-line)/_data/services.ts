@@ -30,9 +30,9 @@ export const services: HService[] = [
     title: "Google 上的差评，还挂着没回？",
     subtitle: "每条没回的差评，都在替你劝退搜到店的新客人。",
     sellingPoints: [
-      "哈佛研究：Google 评分每高半颗星，营收平均多 5-9%——回复差评是把分拉回来的第一步",
+      "哈佛研究：评分每高一颗星，营收平均多 5-9%——回复差评是把分拉回来的第一步",
       "法语回复我们写好，48 小时内到你手机，你过目再发——不低声下气，也不呛人",
-      "积压差评一次清完，原价 49 欧，您店的头两单 25 欧",
+      "积压差评一次清完（10 条以内），原价 49 欧，头两单 25 欧",
     ],
     cta: "把店名发我，先免费替你写一条看看，觉得行再谈钱。",
     ctaSubject: "店名",
@@ -48,7 +48,7 @@ export const services: HService[] = [
     sellingPoints: [
       "法国 300 多家餐厅实测：商家页修整后评论量比同行多一倍不止——评论多，排得靠前，上门客就多",
       "照片、简介、营业时间、菜单信息一次修齐，顺手把 AI 眼里的信息也理顺",
-      "一次性 99 欧，您店的头两单半价",
+      "一次性 99 欧，头两单半价",
     ],
     cta: "发店名，我把你商家页缺的几样列成清单给你，免费。",
     ctaSubject: "店名",
@@ -70,7 +70,8 @@ export const services: HService[] = [
     cta: "把你现在用的报价单拍照发我（金额、客户名遮住，只看格式），免费指出缺哪几项。",
     ctaSubject: "报价单照片（金额、客户名遮住）",
     mailSubject: "报价单+催款信",
-    priceChipPrimary: "99 欧起",
+    priceChipPrimary: "催款信 19 欧/封",
+    priceChipSecondary: "模板套装 99 欧",
   },
   {
     slug: "xunpan",
@@ -86,6 +87,7 @@ export const services: HService[] = [
     ctaSubject: "还没回的询盘邮件",
     mailSubject: "询盘秒回",
     priceChipPrimary: "119 欧",
+    priceChipSecondary: "可选看护 39 欧/月",
   },
   {
     slug: "tijian",
@@ -95,9 +97,9 @@ export const services: HService[] = [
     sellingPoints: [
       "查一遍你的店在 AI 眼里什么样：推不推荐你、说你什么、缺什么信息",
       "查出来的窟窿顺手补上——常和商家页整容一起做",
-      "体检一次 49 欧，您店的头两单半价",
+      "体检一次 49 欧，头两单半价",
     ],
-    cta: "把店名发我，先免费查一条——AI 推不推荐你，一句话告诉你；全套体检（说你什么、缺什么、怎么补）再谈钱。",
+    cta: "把店名发我，先免费查这一项——AI 推不推荐你，一句话告诉你；全套体检（说你什么、缺什么、怎么补）再谈钱。",
     ctaSubject: "店名",
     mailSubject: "AI 推荐体检",
     priceChipPrimary: "49 欧",
@@ -111,7 +113,7 @@ export const services: HService[] = [
     subtitle: "Uber 官方说：菜品描述和照片，最多能差出五成转化。",
     sellingPoints: [
       "法语菜品描述逐条重写，照片给出具体建议——你确认后才改",
-      "Uber Eats / Deliveroo 每平台 79 欧，您店的头两单半价",
+      "Uber Eats / Deliveroo 每平台 79 欧，头两单半价",
       "改完是你自己的页面，不用月月交钱",
     ],
     cta: "把你店的外卖链接发我，免费指出最亏的三处。",
@@ -144,7 +146,7 @@ export const zicha: HService = {
   subtitle:
     "光「在职补助」（prime d'activité）一项，符合条件的人里约一半没去领（法国官方统计）。不开店也用得上。",
   sellingPoints: [
-    "你本人、店员、家里人都行：该领没领的补助、能省没省的税，一次帮你查清——跟居留、入籍有没有关系，报告里也写清楚",
+    "你本人、店员、家里人都行：该领没领的补助、能省没省的税，一次帮你查清——官方对居留、入籍影响怎么说，报告里一并附上",
     "一份中文报告说明白：有什么、条件是什么、去哪申去哪报——你自己去办，我们不经手你的钱，也不要你的证件、账号和密码",
     "报告 29 欧，头两单 15 欧",
   ],
@@ -178,7 +180,7 @@ export const persistentCard: MenuCard = {
 export const oneTimeCards: MenuCard[] = [
   {
     title: "Google 商家页整容",
-    body: "谁用得上：靠街坊客上门的店。照片、简介、营业时间、菜单信息一次修齐，客人搜「附近中餐」时您的店像样地出现——法国 300 多家餐厅实测：修整后评论量翻倍。",
+    body: "谁用得上：靠街坊客上门的店。照片、简介、营业时间、菜单信息一次修齐，客人搜「附近中餐」时您的店像样地出现——法国 300 多家餐厅实测：商家页修齐的店，评论量比同行多一倍不止。",
     price: "一次性 99 欧",
     href: "/shanghu/shangjiaye",
   },
@@ -202,7 +204,7 @@ export const oneTimeCards: MenuCard[] = [
   },
   {
     title: "AI 推荐体检",
-    body: "谁用得上：法国 35 岁以下的顾客，三成最近在用 AI 找餐厅（TheFork 调查）。查一遍你的店在 AI 眼里什么样：推不推荐你、说你什么、缺什么信息。",
+    body: "谁用得上：做年轻客生意的店。法国 35 岁以下顾客，三成最近在用 AI 找餐厅（TheFork 调查）——查一遍您的店在 AI 眼里什么样：推不推荐您、说您什么、缺什么信息。",
     price: "体检一次 49 欧，您店的头两单半价",
     href: "/shanghu/tijian",
   },
