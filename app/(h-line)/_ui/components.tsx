@@ -128,29 +128,83 @@ export function MenuCardItem({ card }: { card: MenuCard }) {
   );
 }
 
-// Del 2026-07-30: 联系方式全挂真链（序：邮箱→FB→IG→小红书；小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15）
-const CONTACTS: Array<{ label: string; href: string; external?: boolean }> = [
-  { label: "邮箱 yvoolab@gmail.com", href: "mailto:yvoolab@gmail.com" },
-  { label: "Facebook「Yvoo Lab」", href: "https://www.facebook.com/yvoolab", external: true },
-  { label: "Instagram @yvoolab", href: "https://www.instagram.com/yvoolab", external: true },
-  { label: "小红书 @AI一武", href: "https://www.xiaohongshu.com/user/profile/695676df000000002a036760", external: true },
+// Del 2026-07-30: 联系方式全挂真链，改图标行（图标引点·小字兜底识别）
+// 小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15
+const CONTACTS: Array<{ label: string; href: string; external?: boolean; icon: React.ReactNode }> = [
+  {
+    label: "邮箱",
+    href: "mailto:yvoolab@gmail.com",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
+        <rect x="2.5" y="5" width="19" height="14" rx="1.5" />
+        <path d="M3 6.5 12 13l9-6.5" />
+      </svg>
+    ),
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/yvoolab",
+    external: true,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
+        <circle cx="12" cy="12" r="9.5" />
+        <path d="M14.8 8.2h-1.6c-.7 0-1.2.5-1.2 1.2v1.6h2.6l-.4 2.4h-2.2v6" />
+      </svg>
+    ),
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/yvoolab",
+    external: true,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
+        <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17" cy="7" r="0.6" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+  {
+    label: "小红书",
+    href: "https://www.xiaohongshu.com/user/profile/695676df000000002a036760",
+    external: true,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden>
+        <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
+        <text
+          x="12"
+          y="14.9"
+          textAnchor="middle"
+          fontSize="6.2"
+          fill="currentColor"
+          stroke="none"
+          fontFamily="inherit"
+        >
+          小红书
+        </text>
+      </svg>
+    ),
+  },
 ];
 
 export function ContactLinks({ className = "" }: { className?: string }) {
   return (
-    <p className={`text-sm ${className}`} style={{ color: "var(--hl-fg-muted)" }}>
-      {CONTACTS.map((c, i) => (
-        <span key={c.href}>
-          {i > 0 && " · "}
-          <a
-            href={c.href}
-            className="underline underline-offset-4 hover:opacity-80"
-            {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-          >
+    <div className={`flex flex-wrap items-start gap-7 ${className}`}>
+      {CONTACTS.map((c) => (
+        <a
+          key={c.href}
+          href={c.href}
+          aria-label={c.label}
+          className="group flex flex-col items-center gap-1.5 no-underline hover:opacity-75"
+          style={{ color: "var(--hl-fg)" }}
+          {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        >
+          <span className="block h-7 w-7">{c.icon}</span>
+          <span className="text-xs" style={{ color: "var(--hl-fg-muted)" }}>
             {c.label}
-          </a>
-        </span>
+          </span>
+        </a>
       ))}
-    </p>
+    </div>
   );
 }
