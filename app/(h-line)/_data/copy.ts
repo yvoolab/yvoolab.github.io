@@ -21,6 +21,10 @@ export const DIAGNOSIS_CTA_LABEL = "说说您最耗人工的那件事";
 export const DIAGNOSIS_CTA_SUB = "15 分钟告诉您能不能做、大概怎么做，不收费";
 export const DIAGNOSIS_MAIL_SUBJECT = "免费诊断";
 
+// Del 2026-07-30 令补回：诊断邀约全式（例子三枚沿信稿 v2.1 已审句 + 总则「用您自己的话」+ 菜单第 9 条尾句拼装，无新造文案）
+export const DIAGNOSIS_FULL_INVITE =
+  "开店的活里，凡是重复的——回评价、催账款、看法语公文——多数都能让 AI 替您干。您不用懂技术：用您自己的话说说，您每天在做什么、哪件事最耗人工。要做的话出书面方案和一口价，您再定。";
+
 // 半价横幅 (spec §2 总门面·item2)
 export const HALF_PRICE_BANNER = "您店的头两单半价，办完留句真实评价就行。";
 

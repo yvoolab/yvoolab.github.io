@@ -4,6 +4,7 @@ import { oneTimeCards, persistentCard } from "../_data/services";
 import {
   CONTACT_LINE,
   DIAGNOSIS_CTA_LABEL,
+  DIAGNOSIS_FULL_INVITE,
   DIAGNOSIS_CTA_SUB,
   DIAGNOSIS_MAIL_SUBJECT,
   EXTRA_LINE,
@@ -39,6 +40,9 @@ export default function ShanghuPage() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
           {SHANGHU_HERO_SUBHEAD}
+        </p>
+        <p className="mt-4 max-w-2xl text-base leading-relaxed">
+          {DIAGNOSIS_FULL_INVITE}
         </p>
         <CtaBlock
           href={mailtoWithSubject(DIAGNOSIS_MAIL_SUBJECT)}
