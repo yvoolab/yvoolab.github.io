@@ -1,0 +1,102 @@
+/* H-line (商户面) design tokens — variant D, quiet-luxury.
+   Scoped to .hline-theme so it never touches (yvoo)/(yiwu) pages. */
+
+.hline-theme {
+  --hl-bg: #f5efe6;
+  --hl-fg: #2b2725;
+  --hl-fg-muted: #6b6560;
+  --hl-accent: #9e2b25;
+  --hl-hairline: #ddd2bd;
+  --hl-panel-border: #e2d7c3;
+  --font-hl-display: "Noto Serif SC", "Songti SC", "Source Han Serif SC", serif;
+  --font-hl-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", Roboto, sans-serif;
+
+  background: var(--hl-bg);
+  color: var(--hl-fg);
+  font-family: var(--font-hl-sans);
+}
+
+.hline-theme .hl-display {
+  font-family: var(--font-hl-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.hline-theme .hl-hairline {
+  border-color: var(--hl-hairline);
+}
+
+.hline-theme .hl-panel {
+  border: 1px solid var(--hl-panel-border);
+  background: transparent;
+}
+
+.hline-theme .hl-cta {
+  background: var(--hl-accent);
+  color: #f5efe6;
+}
+
+.hline-theme .hl-cta:hover {
+  background: #841f1a;
+}
+
+.hline-theme .hl-dot {
+  background: var(--hl-accent);
+}
+
+/* Del 2026-07-30: 桌面小字过小——text-sm/text-xs 在 hline 域内各升一档 */
+.hline-theme .text-sm {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.hline-theme .text-xs {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Del 2026-07-30 定稿 logo：红块 2.2:1 · EB Garamond 白字 · 白线齐字宽后转炭黑 · 字线组居中左对齐 */
+.hline-theme .hl-logo {
+  background: var(--hl-accent);
+  color: #fff;
+  width: 121px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 13px;
+  box-sizing: border-box;
+  border-radius: 1px;
+  font-family: "EB Garamond", Georgia, serif;
+  text-decoration: none;
+}
+.hline-theme .hl-logo-word {
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.hline-theme .hl-logo-rule {
+  display: flex;
+  height: 1px;
+  margin-top: 5px;
+  width: 100%;
+}
+.hline-theme .hl-logo-rule-w {
+  background: #fff;
+  height: 1px;
+}
+.hline-theme .hl-logo-ghost {
+  display: block;
+  font-size: 19px;
+  letter-spacing: 0.02em;
+  line-height: 0;
+  height: 1px;
+  overflow: hidden;
+  color: transparent;
+}
+.hline-theme .hl-logo-rule-k {
+  background: #2b2725;
+  height: 1px;
+  flex: 1;
+}
