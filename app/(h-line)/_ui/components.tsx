@@ -140,7 +140,8 @@ const CONTACTS: Array<{
   icon: (gradId: string) => React.ReactNode;
 }> = [
   {
-    label: "邮箱",
+    label: "",
+    ariaLabel: "邮箱 yvoolab@gmail.com",
     href: "mailto:yvoolab@gmail.com",
     icon: () => (
       // Gmail 红信封
@@ -248,15 +249,17 @@ export function ContactLinks({ className = "" }: { className?: string }) {
         <a
           key={c.href}
           href={c.href}
-          aria-label={c.label}
+          aria-label={c.ariaLabel ?? c.label}
           className="group flex flex-col items-center gap-1.5 no-underline hover:opacity-75"
           style={{ color: "var(--hl-fg)" }}
           {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
           <span className="block h-7 w-7">{c.icon(gradId)}</span>
-          <span className="text-xs" style={{ color: "var(--hl-fg-muted)" }}>
-            {c.label}
-          </span>
+          {c.label && (
+            <span className="text-xs" style={{ color: "var(--hl-fg-muted)" }}>
+              {c.label}
+            </span>
+          )}
         </a>
       ))}
     </div>
