@@ -1,7 +1,7 @@
 // Shared H-line copy fragments, verbatim from menu-customer-version.md.
 
 export const CONTACT_LINE =
-  "邮箱 yvoolab@gmail.com · Facebook「Yvoo Lab」· Instagram @yvoolab · 小红书 @AI一武";
+  "邮箱 yvoolab@gmail.com · Facebook「Yvoo Lab」· Instagram @yvoolab";
 
 export const SLOGAN = "用得起的 AI，听得懂您的 Yvoolab。";
 
