@@ -19,6 +19,7 @@ export default function HLineLayout({ children }: { children: React.ReactNode })
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=EB+Garamond:wght@500&display=swap"
           rel="stylesheet"
         />
+              <script data-goatcounter="https://yvoolab.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
       </head>
       <body className="hline-theme min-h-screen">
         <header className="border-b hl-hairline">
