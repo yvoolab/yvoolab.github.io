@@ -95,16 +95,16 @@ export default function ExcelMergePage() {
 
   return (
     <div>
-      <Link href="/tools" className="text-sm text-slate-500 hover:text-slate-900">
+      <Link href="/tools" className="text-sm hover:underline" style={{ color: "var(--hl-fg-muted)" }}>
         ← 返回首页
       </Link>
-      <h1 className="mt-4 text-3xl font-bold tracking-tight">Excel / CSV 合并</h1>
-      <p className="mt-2 text-slate-600">
+      <h1 className="hl-display mt-4 text-3xl">Excel / CSV 合并</h1>
+      <p className="mt-2" style={{ color: "var(--hl-fg-muted)" }}>
         把多个 .xlsx / .csv 文件合并到一个 sheet。结构相同的多个月数据合并的常用场景。
       </p>
 
       <div
-        className="mt-8 rounded-lg border-2 border-dashed border-slate-300 bg-white p-10 text-center transition hover:border-slate-400"
+        className="hl-hairline mt-8 rounded-lg border-2 border-dashed p-10 text-center transition"
         onDragOver={(e) => e.preventDefault()}
         onDrop={(e) => {
           e.preventDefault();
@@ -119,12 +119,12 @@ export default function ExcelMergePage() {
           className="hidden"
           id="xls-input"
         />
-        <label htmlFor="xls-input" className="cursor-pointer font-medium text-slate-700">
+        <label htmlFor="xls-input" className="cursor-pointer font-medium">
           点击选择 .xlsx / .csv，或拖到此区域
         </label>
       </div>
 
-      <label className="mt-4 flex items-center gap-2 text-sm text-slate-700">
+      <label className="mt-4 flex items-center gap-2 text-sm">
         <input
           type="checkbox"
           checked={skipHeader}
@@ -138,17 +138,19 @@ export default function ExcelMergePage() {
           {files.map((f, i) => (
             <li
               key={`${f.name}-${i}`}
-              className="flex items-center justify-between rounded-md border border-slate-200 bg-white px-4 py-2 text-sm"
+              className="hl-panel flex items-center justify-between rounded-md px-4 py-2 text-sm"
             >
               <span className="flex-1 truncate">
                 {i + 1}. {f.name}
               </span>
-              <span className="ml-3 text-xs text-slate-500">{(f.size / 1024).toFixed(0)} KB</span>
+              <span className="ml-3 text-xs" style={{ color: "var(--hl-fg-muted)" }}>
+                {(f.size / 1024).toFixed(0)} KB
+              </span>
               <div className="ml-4 flex gap-1">
                 <button
                   onClick={() => moveFile(i, i - 1)}
                   disabled={i === 0}
-                  className="rounded px-2 py-1 text-xs hover:bg-slate-100 disabled:opacity-30"
+                  className="rounded px-2 py-1 text-xs hover:bg-black/5 disabled:opacity-30"
                   aria-label="上移"
                 >
                   ↑
@@ -156,14 +158,15 @@ export default function ExcelMergePage() {
                 <button
                   onClick={() => moveFile(i, i + 1)}
                   disabled={i === files.length - 1}
-                  className="rounded px-2 py-1 text-xs hover:bg-slate-100 disabled:opacity-30"
+                  className="rounded px-2 py-1 text-xs hover:bg-black/5 disabled:opacity-30"
                   aria-label="下移"
                 >
                   ↓
                 </button>
                 <button
                   onClick={() => removeFile(i)}
-                  className="rounded px-2 py-1 text-xs text-red-600 hover:bg-red-50"
+                  className="rounded px-2 py-1 text-xs hover:bg-black/5"
+                  style={{ color: "var(--hl-accent)" }}
                 >
                   删除
                 </button>
@@ -174,7 +177,10 @@ export default function ExcelMergePage() {
       )}
 
       {error && (
-        <div className="mt-4 rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div
+          className="mt-4 rounded-md px-4 py-3 text-sm"
+          style={{ border: "1px solid var(--hl-accent)", color: "var(--hl-accent)" }}
+        >
           {error}
         </div>
       )}
@@ -182,7 +188,7 @@ export default function ExcelMergePage() {
       <button
         onClick={merge}
         disabled={busy || files.length < 2}
-        className="mt-6 rounded-md bg-slate-900 px-6 py-3 text-sm font-medium text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300"
+        className="hl-cta mt-6 rounded-md px-6 py-3 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-40"
       >
         {busy ? '合并中…' : `合并并下载（${files.length} 个文件）`}
       </button>

@@ -1,5 +1,6 @@
-/* H-line (商户面) design tokens — variant D, quiet-luxury.
-   Scoped to .hline-theme so it never touches (yvoo)/(yiwu) pages. */
+/* v6 design tokens — variant D, quiet-luxury.
+   Scoped to .hline-theme. Shared by (h-line) 商户面 and (yiwu) 小工具面;
+   (yvoo) stays untouched until its own redesign lands. */
 
 .hline-theme {
   --hl-bg: #f5efe6;

@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <div>
       <section className="mb-10">
-        <h1 className="text-3xl font-bold tracking-tight">免费在线小工具</h1>
-        <p className="mt-3 text-slate-600">
+        <h1 className="hl-display text-3xl">免费在线小工具</h1>
+        <p className="mt-3" style={{ color: "var(--hl-fg-muted)" }}>
           每个工具只做一件事，做到底。文件不离开你的浏览器，不上传任何服务器。
         </p>
       </section>
@@ -28,18 +28,26 @@ export default function Home() {
           <Link
             key={t.href}
             href={t.href}
-            className="block rounded-lg border border-slate-200 bg-white p-6 transition hover:border-slate-400 hover:shadow-sm"
+            className="hl-panel block rounded-lg p-6 transition hover:shadow-sm"
           >
-            <h2 className="text-lg font-semibold">{t.title}</h2>
-            <p className="mt-2 text-sm text-slate-600">{t.desc}</p>
+            <h2 className="hl-display text-lg">{t.title}</h2>
+            <p className="mt-2 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
+              {t.desc}
+            </p>
           </Link>
         ))}
       </section>
 
-      <section className="mt-16 rounded-lg bg-amber-50 p-6 text-sm text-amber-900">
-        <p className="font-medium">需要更复杂的处理？</p>
+      <section className="hl-panel mt-16 rounded-lg p-6 text-sm">
+        <p className="hl-display" style={{ color: "var(--hl-accent)" }}>
+          需要更复杂的处理？
+        </p>
         <p className="mt-2">
-          扫描件 OCR、复杂表格汇总、报表生成等需求 —— 到小红书私信 <span className="font-semibold">@AI一武</span> 报需求。
+          扫描件 OCR、复杂表格汇总、报表生成等需求 —— 发邮件到{" "}
+          <a href="mailto:yvoolab@gmail.com" className="font-semibold underline">
+            yvoolab@gmail.com
+          </a>{" "}
+          报需求。
         </p>
       </section>
     </div>
