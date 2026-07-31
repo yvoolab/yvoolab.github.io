@@ -131,7 +131,7 @@ export function MenuCardItem({ card }: { card: MenuCard }) {
 }
 
 // Del 2026-07-30 亲定：联系图标改各自品牌本色实色图标（非白色玻璃质感），下缀小字名不变
-// 小红书主页 URL 出处 ai-side-hustle research/xiaohongshu/stage2-headlines-sample-2026-04-25.md:15
+// Del 2026-07-31 除名令：小红书全站清除，图标只余三枚（邮箱→FB→IG）
 const CONTACTS: Array<{
   label: string;
   ariaLabel?: string;
@@ -192,28 +192,6 @@ const CONTACTS: Array<{
         <rect x="6.5" y="6.5" width="11" height="11" rx="3" fill="none" stroke="#fff" strokeWidth="1.6" />
         <circle cx="12" cy="12" r="3.2" fill="none" stroke="#fff" strokeWidth="1.6" />
         <circle cx="16.3" cy="7.7" r="1" fill="#fff" />
-      </svg>
-    ),
-  },
-  {
-    label: "小红书",
-    href: "https://www.xiaohongshu.com/user/profile/5572a33a8a75e12cefdef9a2",
-    external: true,
-    icon: () => (
-      // 小红书红圆角横排底 + 白字
-      <svg viewBox="0 0 24 24" aria-hidden>
-        <rect x="1" y="6" width="22" height="12" rx="3" fill="#FF2442" />
-        <text
-          x="12"
-          y="14.7"
-          textAnchor="middle"
-          fontSize="6.4"
-          fill="#fff"
-          stroke="none"
-          fontFamily="inherit"
-        >
-          小红书
-        </text>
       </svg>
     ),
   },
