@@ -10,7 +10,9 @@ export const FR_CHAPING = {
   subtitle:
     "Chaque avis négatif resté sans réponse décourage les nouveaux clients qui viennent de vous trouver.",
   sellingPoints: [
-    "Selon une étude de Harvard, une étoile de plus, c'est en moyenne 5 à 9 % de chiffre d'affaires en plus — répondre aux avis négatifs est le premier pas pour remonter la note.",
+    // « huit sur dix » plutôt que « 80 % » : trois pourcentages d'affilée sonnent
+    // rapport d'étude ; « x sur dix » est le registre courant, aligné sur le chinois 八成.
+    "Huit clients sur dix vont plus volontiers vers un commerce qui répond à tous ses avis ; quatre sur dix évitent celui qui ne répond jamais. Une réponse toute faite en rebute un sur deux — les nôtres sont écrites une à une.",
     "Nous rédigeons vos réponses en français ; vous les recevez sur votre téléphone sous 48 h. Vous relisez, vous publiez. Le ton juste : ni courbettes, ni agressivité.",
     // « chacune » lève l'ambiguïté « 25 € les deux » : le chinois dit 头两单半价 = moitié prix par commande.
     "Vos avis négatifs accumulés, traités en une seule fois (jusqu'à 10) : 49 € — vos deux premières commandes à 25 € chacune.",
