@@ -10,8 +10,11 @@ export function ServicePage({
   footerNote,
   ctaOverride,
   disclaimer = DISCLAIMER,
+  langSwitch,
 }: {
   service: HService;
+  /** 该页有译版时的语言切换链 — 私信里发出去的链只有一条，落地页须自己能换语言 */
+  langSwitch?: { text: string; href: string; hrefLang: string };
   /** 一句法语定位行 (spec §2 服务页·"候 Del" 措辞) — 未定稿时留空,不编造商务文案 */
   frenchTagline?: string;
   /** /zicha 专用页脚回链措辞 */
@@ -29,6 +32,18 @@ export function ServicePage({
   return (
     <>
     <div className="mx-auto max-w-3xl px-6 py-16">
+      {langSwitch && (
+        <p className="mb-6 text-sm">
+          <Link
+            href={langSwitch.href}
+            hrefLang={langSwitch.hrefLang}
+            className="underline underline-offset-4"
+          >
+            {langSwitch.text}
+          </Link>
+        </p>
+      )}
+
       {/* Hero */}
       <h1 className="hl-display text-3xl leading-tight sm:text-4xl">{service.title}</h1>
       <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
