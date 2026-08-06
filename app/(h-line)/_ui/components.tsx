@@ -161,7 +161,10 @@ const CONTACTS: Array<{
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/yvoolab",
+    // Page「Yvoolab」, not the personal account (2026-08-06, Del's call). The personal
+    // account's display name still carries the brand, which breaks Meta's authentic-identity
+    // policy, and the rename is locked until 2026-09-22 -- so stop sending customers there.
+    href: "https://www.facebook.com/profile.php?id=61592924042924",
     external: true,
     icon: () => (
       // Facebook 蓝圆底白 f
