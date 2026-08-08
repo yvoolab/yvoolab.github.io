@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Divider, Footer } from "../../../_ui/components";
 import { DISCLAIMER } from "../../../_data/copy";
 
-const TITLE = "法国客户欠款不还怎么办？法语催款信的写法与节奏";
+const TITLE = "客户欠款不还怎么办？法语催款信的写法与节奏";
 const DESC =
   "在法国做批发、装修、上门服务的华人商户催款指南：催款分三步（relance、mise en demeure、法律程序）、每步的法语信怎么写、措辞怎样既收得回钱又不伤客情。";
 const URL_PATH = "/shanghu/zhinan/cuikuan-xin";
@@ -69,7 +69,7 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <article className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">法国客户欠款不还，催款信怎么写？</h1>
+        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">客户欠款不还，催款信怎么写？</h1>
         <p className="mt-3 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
           Yvoolab · 发布 2026-08-08 · 适用于批发、装修、上门服务等赊账生意
         </p>

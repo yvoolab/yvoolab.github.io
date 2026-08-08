@@ -19,7 +19,7 @@ const ARTICLES: Array<[string, string, string]> = [
   ],
   [
     "/shanghu/zhinan/cuikuan-xin",
-    "法国客户欠款不还，催款信怎么写？",
+    "客户欠款不还，催款信怎么写？",
     "催款三步走：友好提醒、正式催告、法律程序——每步的法语信怎么写，既收得回钱又不伤客情。",
   ],
   [
@@ -29,7 +29,7 @@ const ARTICLES: Array<[string, string, string]> = [
   ],
   [
     "/shanghu/zhinan/shanghu-butie",
-    "法国小商户找补贴，先弄清三件事",
+    "法国商户找补贴，先弄清三件事",
     "官方渠道去哪查、申请前的三个自查、怎么识别「包办补贴」的坑。",
   ],
 ];

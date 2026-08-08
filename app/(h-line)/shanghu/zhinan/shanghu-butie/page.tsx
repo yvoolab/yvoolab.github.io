@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Divider, Footer } from "../../../_ui/components";
 import { DISCLAIMER } from "../../../_data/copy";
 
-const TITLE = "法国小商户能申哪些补贴？先弄清三件事";
+const TITLE = "法国商户能申哪些补贴？先弄清三件事";
 const DESC =
   "在法国开店的华人商户找补贴指南：官方补贴信息去哪查（aides-territoires 等官方渠道）、申请前先弄清的三件事、怎么识别「包办补贴」的坑。";
 const URL_PATH = "/shanghu/zhinan/shanghu-butie";
@@ -69,13 +69,13 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <article className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">法国小商户找补贴，先弄清三件事</h1>
+        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">法国商户找补贴，先弄清三件事</h1>
         <p className="mt-3 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
           Yvoolab · 发布 2026-08-08 · 适用于已注册公司或个体的商户
         </p>
 
         <p className="mt-4 leading-relaxed">
-          直接给答案：法国面向小商户的公共补贴确实存在——数字化转型、门面改造、节能设备、招聘培训等方向都有——但<strong>没有一项是「人人有份」</strong>。少走弯路的办法是先弄清三件事：<strong>你的注册形态、你的行业代码（APE）、你所在的地区</strong>。几乎所有补贴的条件都围绕这三样筛人。
+          直接给答案：法国面向商户的公共补贴确实存在——数字化转型、门面改造、节能设备、招聘培训等方向都有——但<strong>没有一项是「人人有份」</strong>。少走弯路的办法是先弄清三件事：<strong>你的注册形态、你的行业代码（APE）、你所在的地区</strong>。几乎所有补贴的条件都围绕这三样筛人。
         </p>
 
         <H2>去哪查？只认官方</H2>
@@ -85,7 +85,7 @@ export default function Page() {
             ——政府官方汇总平台，全法各级公共补贴按地区、行业、用途可筛。
           </li>
           <li><strong>你所在的 CCI（工商会）/ CMA（手工业协会）</strong>——本地项目常只在这里公示，且有免费咨询窗口。</li>
-          <li><strong>大区（Région）官网的企业版块</strong>——大区是小商户补贴的主要出资方之一。</li>
+          <li><strong>大区（Région）官网的企业版块</strong>——大区是商户补贴的主要出资方之一。</li>
         </ul>
         <p className="mt-4 leading-relaxed">
           第三方文章、社群转帖只当线索用——补贴有截止日、预算池会用尽，申请前一律回官方页面核对<strong>当下</strong>的条件与期限。
