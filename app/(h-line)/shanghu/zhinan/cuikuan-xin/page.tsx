@@ -5,7 +5,7 @@ import { DISCLAIMER } from "../../../_data/copy";
 
 const TITLE = "客户欠款不还怎么办？法语催款信的写法与节奏";
 const DESC =
-  "在法国做批发、装修、上门服务的华人商户催款指南：催款分三步（relance、mise en demeure、法律程序）、每步的法语信怎么写、措辞怎样既收得回钱又不伤客情。";
+  "在法国做批发、装修、上门服务的商户催款指南：催款分三步（relance、mise en demeure、法律程序）、每步的法语信怎么写、措辞怎样既收得回钱又不伤客情。";
 const URL_PATH = "/shanghu/zhinan/cuikuan-xin";
 const PUBLISHED = "2026-08-08";
 

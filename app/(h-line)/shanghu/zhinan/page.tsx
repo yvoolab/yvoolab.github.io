@@ -6,7 +6,7 @@ import { DISCLAIMER } from "../../_data/copy";
 export const metadata: Metadata = {
   title: "商户指南 · 差评、催款、行政信、补贴 — Yvoolab",
   description:
-    "写给在法国开店的华人商户的实用指南：Google 差评怎么回、催款信怎么写、法语行政信怎么分轻重、补贴去哪找。中文写成，拿来就能用。",
+    "写给在法国开店的商户的实用指南：Google 差评怎么回、催款信怎么写、法语行政信怎么分轻重、补贴去哪找。中文写成，拿来就能用。",
   alternates: { canonical: "/shanghu/zhinan" },
 };
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const ARTICLES: Array<[string, string, string]> = [
   [
     "/shanghu/zhinan/google-chaping-huifu",
-    "法国餐馆的 Google 差评怎么回复？",
+    "餐馆的 Google 差评怎么回复？",
     "48 小时内、法语、四步结构；两条可直接改的法语模板，附疑似恶意差评的处理办法。",
   ],
   [
@@ -40,7 +40,7 @@ export default function ZhinanPage() {
       <div className="mx-auto max-w-3xl px-6 py-16">
         <h1 className="hl-display text-3xl leading-tight sm:text-4xl">商户指南</h1>
         <p className="mt-3 leading-relaxed" style={{ color: "var(--hl-fg-muted)" }}>
-          写给在法国开店的华人老板：差评、催款、行政信、补贴——每篇先给答案，拿来就能用。
+          写给在法国开店的老板：差评、催款、行政信、补贴——每篇先给答案，拿来就能用。
         </p>
         <div className="mt-10 space-y-8">
           {ARTICLES.map(([href, title, desc]) => (

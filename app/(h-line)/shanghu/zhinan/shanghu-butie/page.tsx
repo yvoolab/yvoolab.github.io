@@ -5,7 +5,7 @@ import { DISCLAIMER } from "../../../_data/copy";
 
 const TITLE = "法国商户能申哪些补贴？先弄清三件事";
 const DESC =
-  "在法国开店的华人商户找补贴指南：官方补贴信息去哪查（aides-territoires 等官方渠道）、申请前先弄清的三件事、怎么识别「包办补贴」的坑。";
+  "在法国开店的商户找补贴指南：官方补贴信息去哪查（aides-territoires 等官方渠道）、申请前先弄清的三件事、怎么识别「包办补贴」的坑。";
 const URL_PATH = "/shanghu/zhinan/shanghu-butie";
 const PUBLISHED = "2026-08-08";
 

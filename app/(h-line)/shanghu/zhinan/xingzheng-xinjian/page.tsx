@@ -5,7 +5,7 @@ import { DISCLAIMER } from "../../../_data/copy";
 
 const TITLE = "收到法语行政信看不懂怎么办？先分轻重缓急";
 const DESC =
-  "在法国开店的华人商户行政信件指南：怎么十秒判断一封法语公文急不急、哪几类信绝不能拖（催告、扣款通知、限期整改）、拖过期限会发生什么。";
+  "在法国开店的商户行政信件指南：怎么十秒判断一封法语公文急不急、哪几类信绝不能拖（催告、扣款通知、限期整改）、拖过期限会发生什么。";
 const URL_PATH = "/shanghu/zhinan/xingzheng-xinjian";
 const PUBLISHED = "2026-08-08";
 

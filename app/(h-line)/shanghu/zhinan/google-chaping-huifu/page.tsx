@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Divider, Footer } from "../../../_ui/components";
 import { DISCLAIMER } from "../../../_data/copy";
 
-const TITLE = "法国餐馆 Google 差评怎么回复？模板与三条原则";
+const TITLE = "餐馆的 Google 差评怎么回复？模板与三条原则";
 const DESC =
-  "法国餐馆、美甲店、零售店的 Google 差评回复指南：48 小时内用法语回、三步结构、两条可直接改的法语模板，以及疑似恶意差评的处理办法。";
+  "餐馆、美甲店、零售店的 Google 差评回复指南：48 小时内用法语回、三步结构、两条可直接改的法语模板，以及疑似恶意差评的处理办法。";
 const URL_PATH = "/shanghu/zhinan/google-chaping-huifu";
 const PUBLISHED = "2026-08-07";
 
@@ -22,7 +22,7 @@ const FAQS: Array<[string, string]> = [
     "不能。只有违反 Google 政策的评价（虚假、辱骂、竞争对手冒充顾客等）才可能通过官方举报下架。凡承诺「花钱包删」的服务都不可信，且刷好评、买好评本身违反 Google 规则，被查到反伤店铺。删不掉的差评，认真回复是店家唯一握在自己手里的主动权。",
   ],
   [
-    "老板法语不好，差评怎么回？",
+    "法语没把握，差评怎么回？",
     "回复必须用法语写——看差评的新客人是法语读者。法语没把握，可以请店里法语好的员工把关，或找代笔服务：把差评发过去，对方写好你过目再发，不必自己硬憋。",
   ],
   [
@@ -87,7 +87,7 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <article className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">法国餐馆的 Google 差评怎么回复？</h1>
+        <h1 className="hl-display text-3xl leading-tight sm:text-4xl">餐馆的 Google 差评怎么回复？</h1>
         <p className="mt-3 text-sm" style={{ color: "var(--hl-fg-muted)" }}>
           Yvoolab · 发布 2026-08-07 · 适用于餐馆、美甲店、按摩店、零售店
         </p>
