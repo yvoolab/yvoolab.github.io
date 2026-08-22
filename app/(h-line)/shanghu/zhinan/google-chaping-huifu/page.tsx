@@ -145,7 +145,7 @@ export default function Page() {
         <div className="mt-4">
           <p className="hl-display text-xl leading-snug">差评堆着没空回、法语没把握？</p>
           <p className="mt-3 leading-relaxed">
-            这正是我们的活：法语回复我们写好，48 小时内到你手机，你过目再发。积压差评一次清完（10 条以内）49 欧，头两单 25 欧。
+            这正是我们的活：法语回复我们写好，48 小时内到你手机，你过目再发。积压差评一次清完（10 条以内）。
           </p>
           <p className="mt-4">
             <a

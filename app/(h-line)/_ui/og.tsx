@@ -36,7 +36,7 @@ export async function renderOgImage({
   title: string;
   priceChip?: string;
 }) {
-  const text = title + (priceChip ?? "") + "Yvoolab欧起";
+  const text = title + (priceChip ?? "") + "Yvoolab";
   const fontData = await loadFont(text, 700);
 
   return new ImageResponse(

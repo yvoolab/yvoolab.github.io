@@ -6,6 +6,6 @@ export { size, contentType, dynamic };
 export default async function Image() {
   return renderOgImage({
     title: FR_CHAPING.title,
-    priceChip: `${FR_CHAPING.priceChipPrimary} · ${FR_CHAPING.priceChipSecondary}`,
+    priceChip: FR_CHAPING.priceChipPrimary,
   });
 }

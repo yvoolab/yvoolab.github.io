@@ -34,13 +34,12 @@ export const services: HService[] = [
       // chaping 节（BrightLocal 2026）。国别对外模糊系 Del 2026-08-02 令；被问则如实答。
       "八成客人更愿光顾有评必回的店，四成不愿去从不回复的；套话回复一半人反感——所以我们一条一条写",
       "法语回复我们写好，48 小时内到你手机，你过目再发——不低声下气，也不呛人",
-      "积压差评一次清完（10 条以内），原价 49 欧，头两单 25 欧",
+      "积压差评一次清完（10 条以内）",
     ],
     cta: "把店名发我，先免费替你写一条看看，觉得行再谈钱。",
     ctaSubject: "店名",
     mailSubject: "差评回复",
-    priceChipPrimary: "49 欧",
-    priceChipSecondary: "头两单 25 欧",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "shangjiaye",
@@ -50,13 +49,12 @@ export const services: HService[] = [
     sellingPoints: [
       "法国 300 多家餐厅实测：商家页修整后评论量比同行多一倍不止——评论多，排得靠前，上门客就多",
       "照片、简介、营业时间、菜单信息一次修齐，顺手把 AI 眼里的信息也理顺",
-      "一次性 99 欧，头两单半价",
+      "一次性完成",
     ],
     cta: "发店名，我把你商家页缺的几样列成清单给你，免费。",
     ctaSubject: "店名",
     mailSubject: "商家页整容",
-    priceChipPrimary: "99 欧",
-    priceChipSecondary: "头两单半价",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "baojia",
@@ -65,15 +63,14 @@ export const services: HService[] = [
     title: "法国报价单法定 15 项，你的模板齐了吗？",
     subtitle: "催款信法语代笔、当天出——自己的钱，早点要回来。",
     sellingPoints: [
-      "催款信 19 欧/封，你口述我落笔，措辞有分寸不伤客情",
-      "顺手把报价单也配齐：法国 devis 法定 15 项模板套装 99 欧，免得不合规挨罚（最高可罚 3000 欧）",
+      "你口述我落笔，措辞有分寸不伤客情",
+      "顺手把报价单也配齐：法国 devis 法定 15 项模板套装，免得不合规挨罚（最高可罚 3000 欧）",
       "中文沟通，微信语音就能说清",
     ],
     cta: "把你现在用的报价单拍照发我（金额、客户名遮住，只看格式），免费指出缺哪几项。",
     ctaSubject: "报价单照片（金额、客户名遮住）",
     mailSubject: "报价单+催款信",
-    priceChipPrimary: "催款信 19 欧/封",
-    priceChipSecondary: "模板套装 99 欧",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "xunpan",
@@ -84,14 +81,13 @@ export const services: HService[] = [
     subtitle: "一小时内回复，拿单机会高出近七倍。过了一夜，客人已经问了同行。",
     sellingPoints: [
       "法语/英语回信 AI 打好草稿，你确认一下就发——快，但每个字你说了算",
-      "搭建一次 119 欧，此后询盘再多也不过夜",
+      "搭建一次，此后询盘再多也不过夜",
       "没空守邮箱不是错——但客户等了一夜，就会去问你的同行。现在不用守了",
     ],
     cta: "把你最近一封还没回的询盘转发给我，免费替你拟好回信。",
     ctaSubject: "还没回的询盘邮件",
     mailSubject: "询盘秒回",
-    priceChipPrimary: "119 欧",
-    priceChipSecondary: "可选看护 39 欧/月",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "tijian",
@@ -101,13 +97,12 @@ export const services: HService[] = [
     sellingPoints: [
       "查一遍你的店在 AI 眼里什么样：推不推荐你、说你什么、缺什么信息",
       "查出来的窟窿顺手补上——常和商家页整容一起做",
-      "体检一次 49 欧，头两单半价",
+      "一次体检，逐项过一遍",
     ],
     cta: "把店名发我，先免费查这一项——AI 推不推荐你，一句话告诉你；全套体检（说你什么、缺什么、怎么补）再谈钱。",
     ctaSubject: "店名",
     mailSubject: "AI 推荐体检",
-    priceChipPrimary: "49 欧",
-    priceChipSecondary: "头两单半价",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "waimai",
@@ -117,14 +112,13 @@ export const services: HService[] = [
     subtitle: "Uber 官方说：菜品描述和照片，最多能差出五成转化。",
     sellingPoints: [
       "法语菜品描述逐条重写，照片给出具体建议——你确认后才改",
-      "Uber Eats / Deliveroo 每平台 79 欧，头两单半价",
+      "Uber Eats / Deliveroo 两个平台都做",
       "改完是你自己的页面，不用月月交钱",
     ],
     cta: "把你店的外卖链接发我，免费指出最亏的三处。",
     ctaSubject: "外卖链接",
     mailSubject: "外卖页优化",
-    priceChipPrimary: "79 欧/平台",
-    priceChipSecondary: "头两单半价",
+    priceChipPrimary: "按需报价",
   },
   {
     slug: "butie",
@@ -133,13 +127,13 @@ export const services: HService[] = [
     subtitle: "传统申报中介开口 3000 欧起、拿到还要抽成——我们不抽成。",
     sellingPoints: [
       "官方申请条件整理成清单给你，你自己对照、自己拿主意",
-      "初查 49 欧；要申的话，申请书文字草稿代拟 99 欧起（你自己提交）",
+      "初查；要申的话，申请书文字草稿代拟（你自己提交）",
       "不承诺一定拿到——只把路指清楚，钱是你的",
     ],
     cta: "回「补贴」两个字，先把官方查询入口免费发你。",
     ctaSubject: "「补贴」两字",
     mailSubject: "商户找补贴",
-    priceChipPrimary: "49 欧起",
+    priceChipPrimary: "按需报价",
   },
 ];
 
@@ -152,13 +146,12 @@ export const zicha: HService = {
   sellingPoints: [
     "你本人、店员、家里人都行：该领没领的补助、能省没省的税，一次帮你查清——官方对居留、入籍影响怎么说，报告里一并附上",
     "一份中文报告说明白：有什么、条件是什么、去哪申去哪报——你自己去办，我们不经手你的钱，也不要你的证件、账号和密码",
-    "报告 29 欧，头两单 15 欧",
+    "一份报告",
   ],
   cta: "回「自查」两个字，一分钟几个问题，先免费告诉你值不值得查——不值得查也照实说。",
   ctaSubject: "「自查」两字",
   mailSubject: "自查",
-  priceChipPrimary: "29 欧",
-  priceChipSecondary: "头两单 15 欧",
+  priceChipPrimary: "按需报价",
 };
 
 export function findService(slug: string): HService | undefined {
@@ -177,7 +170,7 @@ export type MenuCard = {
 export const persistentCard: MenuCard = {
   title: "差评回复管家",
   body: "谁用得上：Google 上有评价的一切商家——餐馆、美甲、按摩、理发、烟草店、亚超、旅行社都算。没回的差评全部配好法语回复草稿，您过目就能发；此后每周帮您盯新评价，新差评 48 小时内草稿到您手机。",
-  price: "积压清理一次 49 欧（10 条以内）；月度看护 69 欧/月",
+  price: "按需报价",
   href: "/shanghu/chaping",
 };
 
@@ -185,43 +178,43 @@ export const oneTimeCards: MenuCard[] = [
   {
     title: "Google 商家页整容",
     body: "谁用得上：靠街坊客上门的店。照片、简介、营业时间、菜单信息一次修齐，客人搜「附近中餐」时您的店像样地出现——法国 300 多家餐厅实测：商家页修齐的店，评论量比同行多一倍不止。",
-    price: "一次性 99 欧",
+    price: "按需报价",
     href: "/shanghu/shangjiaye",
   },
   {
     title: "外卖页面优化",
     body: "谁用得上：上了 Uber Eats / Deliveroo 的餐馆。菜单照片建议+法语菜品描述重写——描述和照片最多能差出五成转化（Uber 官方说法）。",
-    price: "79 欧/平台",
+    price: "按需报价",
     href: "/shanghu/waimai",
   },
   {
     title: "询盘秒回",
     body: "谁用得上：批发、外贸、装修队，凡靠邮件接单的生意。客户邮件 AI 打草稿、秒回您确认——客户不会因为等了一夜，跑去问您的同行（一小时内回复，拿单机会高出近七倍）。",
-    price: "搭建 119 欧 + 可选看护 39 欧/月",
+    price: "按需报价",
     href: "/shanghu/xunpan",
   },
   {
     title: "报价单+催款信加速",
     body: "谁用得上：装修队、工匠、上门服务。法国报价单（devis）15 项法定信息一次配齐 + 催款信法语代笔当天出（客户平均拖您 14 天）。",
-    price: "模板套装 99 欧；催款信 19 欧/封",
+    price: "按需报价",
     href: "/shanghu/baojia",
   },
   {
     title: "AI 推荐体检",
     body: "谁用得上：做年轻客生意的店。法国 35 岁以下顾客，三成最近在用 AI 找餐厅（TheFork 调查）——查一遍您的店在 AI 眼里什么样：推不推荐您、说您什么、缺什么信息。",
-    price: "体检一次 49 欧，您店的头两单半价",
+    price: "按需报价",
     href: "/shanghu/tijian",
   },
   {
     title: "商户找补贴",
     body: "谁用得上：注册了公司的商户。官方申请条件整理成清单给您，您自己对照拿主意；要申的话申请书文字草稿代拟（您自己提交）。传统中介开口 3000 欧起还抽成，我们不抽成。",
-    price: "初查 49 欧；申报草稿 99 欧起/项",
+    price: "按需报价",
     href: "/shanghu/butie",
   },
   {
     title: "网站全案：建站·改版·合规体检·SEO/AI 推荐优化",
     body: "谁用得上：有网站或想要网站的商家。没网站建一个、有网站翻新；查网站合不合欧盟法规；客人 Google 搜得到您、问 AI 时推荐得出您。",
-    price: "体检类 49 欧；建站/改版按需一口价（书面方案后报）",
+    price: "按需报价",
     href: "mailto:yvoolab@gmail.com",
     external: true,
   },
