@@ -45,7 +45,7 @@ export const TRUST_ITEMS = [
 
 // 另有一行 (spec §2 总门面·item5), verbatim from menu-customer-version.md
 export const EXTRA_LINE =
-  "另有：法国信件拆解（一次性·谁用得上：收到法语公文看不懂的商户/个人）39 欧 · 信箱管家（持续看护·谁用得上：所有小公司/个体户，法语公文月月都有）119 欧/月";
+  "另有：法国信件拆解（一次性·谁用得上：收到法语公文看不懂的商户/个人）· 信箱管家（持续看护·谁用得上：所有小公司/个体户，法语公文月月都有）";
 
 // En français 摘要段 (spec §2 总门面·item6). 法语措辞候 Del 裁定,
 // 此句取自已核准的 variant-D 视觉稿原样文字，非新造商业文案。

@@ -115,7 +115,7 @@ export default function Page() {
         <div className="mt-4">
           <p className="hl-display text-xl leading-snug">条文太多，不想自己一条条啃？</p>
           <p className="mt-3 leading-relaxed">
-            这正是我们的活：把你能对上号的官方申请条件整理成中文清单给你，你自己拿主意——初查 49 欧；要申的话，申请书文字草稿代拟 99 欧起/项，你自己提交。不抽成。
+            这正是我们的活：把你能对上号的官方申请条件整理成中文清单给你，你自己拿主意——初查；要申的话，申请书文字草稿代拟，你自己提交。不抽成。
           </p>
           <p className="mt-4">
             <a href="mailto:yvoolab@gmail.com?subject=商户找补贴" className="underline underline-offset-4 font-semibold">

@@ -110,7 +110,7 @@ export default function Page() {
         <div className="mt-4">
           <p className="hl-display text-xl leading-snug">法语公文堆一桌，不想每封都猜？</p>
           <p className="mt-3 leading-relaxed">
-            拍照发来，当天用中文说明白：这封信是什么、急不急、该办什么、限期在哪。单封拆解 39 欧；法语公文月月都有的，信箱管家 119 欧/月——来信逐封替你盯着，急件当天到你手机。
+            拍照发来，当天用中文说明白：这封信是什么、急不急、该办什么、限期在哪。单封拆解；法语公文月月都有的，信箱管家——来信逐封替你盯着，急件当天到你手机。
           </p>
           <p className="mt-4">
             <a href="mailto:yvoolab@gmail.com?subject=法国信件拆解" className="underline underline-offset-4 font-semibold">

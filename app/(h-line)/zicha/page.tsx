@@ -5,10 +5,10 @@ import { DISCLAIMER_ZICHA } from "../_data/copy";
 
 export const metadata: Metadata = {
   title: "该拿没拿的补助、多交了的税——你有没有？",
-  description: `${zicha.subtitle} 29 欧中文报告。`.slice(0, 110),
+  description: `${zicha.subtitle} 中文报告。`.slice(0, 110),
   openGraph: {
     title: "该拿没拿的补助、多交了的税——你有没有？",
-    description: `${zicha.subtitle} 29 欧中文报告。`.slice(0, 110),
+    description: `${zicha.subtitle} 中文报告。`.slice(0, 110),
   },
   twitter: { card: "summary_large_image" },
 };

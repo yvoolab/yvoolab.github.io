@@ -14,16 +14,14 @@ export const FR_CHAPING = {
     // rapport d'étude ; « x sur dix » est le registre courant, aligné sur le chinois 八成.
     "Huit clients sur dix vont plus volontiers vers un commerce qui répond à tous ses avis ; quatre sur dix évitent celui qui ne répond jamais. Une réponse toute faite en rebute un sur deux — les nôtres sont écrites une à une.",
     "Nous rédigeons vos réponses en français ; vous les recevez sur votre téléphone sous 48 h. Vous relisez, vous publiez. Le ton juste : ni courbettes, ni agressivité.",
-    // « chacune » lève l'ambiguïté « 25 € les deux » : le chinois dit 头两单半价 = moitié prix par commande.
-    "Vos avis négatifs accumulés, traités en une seule fois (jusqu'à 10) : 49 € — vos deux premières commandes à 25 € chacune.",
+    "Vos avis négatifs accumulés, traités en une seule fois (jusqu'à 10).",
   ],
   // Scindé en bouton + sous-titre comme sur /zicha : en un seul bloc, le texte
   // long transforme le CTA rouge en bandeau et il ne se lit plus comme un bouton.
   cta: "Envoyez-nous le nom de votre établissement",
   ctaSub: "Nous rédigeons une première réponse, gratuitement. Elle vous convainc ? On parle prix.",
   mailSubject: "Réponse aux avis Google",
-  priceChipPrimary: "49 €",
-  priceChipSecondary: "les 2 premières à 25 € chacune",
+  priceChipPrimary: "Sur devis",
 } as const;
 
 export const FR_STEPS_TITLE = "Comment ça se passe";
@@ -47,7 +45,7 @@ export const FR_DISCLAIMER =
   "Précision : ce service relève de l'assistance à la lecture, à la rédaction et à la mise en ordre de courriers administratifs et commerciaux (activité d'écrivain public). Il ne constitue pas un conseil juridique, comptable ou fiscal. Nous travaillons à partir des documents et informations que vous nous transmettez, pour vous aider à comprendre vos courriers et à en rédiger des projets de réponse ; la vérification des délais, des montants et des informations officielles ainsi que la décision finale restent de votre responsabilité — pour toute question juridique ou fiscale importante, consultez un professionnel. Il s'agit d'une prestation entre professionnels ; sauf faute lourde ou dolosive, notre responsabilité est limitée au périmètre convenu par écrit.";
 
 export const FR_META_DESCRIPTION =
-  "Chaque avis négatif resté sans réponse décourage les clients qui vous trouvent sur Google. 49 € ; les deux premières commandes à 25 € chacune.";
+  "Chaque avis négatif resté sans réponse décourage les clients qui vous trouvent sur Google.";
 
 export const FR_LANG_SWITCH = "中文版";
 export const ZH_LANG_SWITCH = "Lire en français";

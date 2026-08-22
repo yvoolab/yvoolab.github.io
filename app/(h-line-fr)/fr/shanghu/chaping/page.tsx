@@ -44,7 +44,6 @@ export default function Page() {
 
         <div className="hl-panel mt-8 inline-flex items-baseline gap-3 rounded-full px-5 py-2 text-sm">
           <span className="hl-display text-base">{FR_CHAPING.priceChipPrimary}</span>
-          <span style={{ color: "var(--hl-accent)" }}>{FR_CHAPING.priceChipSecondary}</span>
         </div>
 
         <CtaBlock
