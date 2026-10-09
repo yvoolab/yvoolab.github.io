@@ -31,12 +31,12 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...STABLE.map((p) => ({
-      url: BASE + p,
+      url: BASE + p + "/",
       changeFrequency: "monthly" as const,
       priority: p === "/shanghu" ? 1 : 0.7,
     })),
     ...FRESH.map((p) => ({
-      url: BASE + p,
+      url: BASE + p + "/",
       lastModified: TODAY,
       changeFrequency: "monthly" as const,
       priority: 0.7,
