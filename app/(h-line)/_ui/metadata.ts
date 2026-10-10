@@ -14,5 +14,6 @@ export function serviceMetadata(service: HService): Metadata {
     description,
     openGraph: { title, description },
     twitter: { card: "summary_large_image" },
+    alternates: { canonical: `/shanghu/${service.slug}/` },
   };
 }

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "隐私政策 · Politique de confidentialité — Yvoolab",
   description:
     "Yvoolab 商户服务之个人数据处理说明（RGPD）：数据来源、用途、保存期限与您的权利。",
+  alternates: { canonical: "/shanghu/yinsi/" },
 };
 
 // ponytail: 纯静态双语条文页，不做手风琴/锚点导航——条文九节一屏可扫，交互是负资产

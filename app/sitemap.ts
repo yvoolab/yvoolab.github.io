@@ -6,6 +6,7 @@ const TODAY = new Date("2026-08-08");
 // ponytail: 静态清单——路由逾三十条或多线共用时再谈自动收集
 // lastModified 只标真在当日动过的页；服务页七条不标，免虚假新鲜度信号
 const STABLE = [
+  "", // root hub page (public/index.html)
   "/shanghu",
   "/shanghu/chaping",
   "/shanghu/baojia",
