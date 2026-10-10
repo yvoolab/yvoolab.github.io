@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description: "巴黎华人商户 AI 文书协助——差评回复、催款信、法语公文、找补贴。头两单半价。",
   },
   twitter: { card: "summary_large_image" },
+  alternates: { canonical: "/shanghu/" },
 };
 
 export default function ShanghuPage() {
