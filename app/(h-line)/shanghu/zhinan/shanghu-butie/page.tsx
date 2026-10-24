@@ -118,7 +118,7 @@ export default function Page() {
             这正是我们的活：把你能对上号的官方申请条件整理成中文清单给你，你自己拿主意——初查；要申的话，申请书文字草稿代拟，你自己提交。不抽成。
           </p>
           <p className="mt-4">
-            <a href="mailto:yvoolab@gmail.com?subject=商户找补贴" className="underline underline-offset-4 font-semibold">
+            <a href="mailto:yvoo@yvoolab.com?subject=商户找补贴" className="underline underline-offset-4 font-semibold">
               把你的行业和注册形态发我，先告诉你值不值得查。
             </a>
           </p>

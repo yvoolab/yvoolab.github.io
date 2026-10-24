@@ -215,7 +215,7 @@ export const oneTimeCards: MenuCard[] = [
     title: "网站全案：建站·改版·合规体检·SEO/AI 推荐优化",
     body: "谁用得上：有网站或想要网站的商家。没网站建一个、有网站翻新；查网站合不合欧盟法规；客人 Google 搜得到您、问 AI 时推荐得出您。",
     price: "按需报价",
-    href: "mailto:yvoolab@gmail.com",
+    href: "mailto:yvoo@yvoolab.com",
     external: true,
   },
 ];

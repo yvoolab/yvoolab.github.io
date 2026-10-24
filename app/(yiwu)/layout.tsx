@@ -35,11 +35,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </Link>
             <a
-              href="mailto:yvoolab@gmail.com"
+              href="mailto:yvoo@yvoolab.com"
               className="text-xs tracking-wide hover:underline"
               style={{ color: "var(--hl-fg-muted)" }}
             >
-              yvoolab@gmail.com
+              yvoo@yvoolab.com
             </a>
           </div>
         </header>
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             className="mx-auto max-w-4xl px-6 py-6 text-center text-xs"
             style={{ color: "var(--hl-fg-muted)" }}
           >
-            所有文件在你的浏览器内处理，不上传任何服务器。 · 更复杂的需求，发邮件到 yvoolab@gmail.com
+            所有文件在你的浏览器内处理，不上传任何服务器。 · 更复杂的需求，发邮件到 yvoo@yvoolab.com
             {" · "}
             <a href="/" className="underline">
               查看 Yvoo Lab 全部服务

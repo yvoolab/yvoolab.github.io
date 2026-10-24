@@ -21,18 +21,18 @@ export default function YvooLayout({ children }: { children: React.ReactNode }) 
               Yvoo Lab
             </a>
             <a
-              href="mailto:yvoolab@gmail.com"
+              href="mailto:yvoo@yvoolab.com"
               className="hidden text-sm text-slate-600 hover:text-slate-900 sm:inline"
             >
-              yvoolab@gmail.com
+              yvoo@yvoolab.com
             </a>
           </div>
         </header>
         <main className="mx-auto max-w-4xl px-6 py-10">{children}</main>
         <footer className="mt-20 border-t border-slate-200 bg-white">
           <div className="mx-auto max-w-4xl px-6 py-6 text-center text-xs text-slate-500">
-            <a href="mailto:yvoolab@gmail.com" className="hover:text-slate-900">
-              yvoolab@gmail.com
+            <a href="mailto:yvoo@yvoolab.com" className="hover:text-slate-900">
+              yvoo@yvoolab.com
             </a>
             {" · "}
             <a

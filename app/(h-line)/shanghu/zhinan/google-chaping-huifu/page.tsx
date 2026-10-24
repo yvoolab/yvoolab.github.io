@@ -149,7 +149,7 @@ export default function Page() {
           </p>
           <p className="mt-4">
             <a
-              href="mailto:yvoolab@gmail.com?subject=差评回复"
+              href="mailto:yvoo@yvoolab.com?subject=差评回复"
               className="underline underline-offset-4 font-semibold"
             >
               把店名发我，先免费替你写一条看看，觉得行再谈钱。

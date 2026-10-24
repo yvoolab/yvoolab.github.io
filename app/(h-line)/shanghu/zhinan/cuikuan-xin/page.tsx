@@ -118,7 +118,7 @@ export default function Page() {
             你口述欠款情况，法语催款信我们替你写——首催、跟进、正式催告，措辞有分寸不伤客情。催款信一封；法国报价单（devis）法定项目一次配齐，模板套装。
           </p>
           <p className="mt-4">
-            <a href="mailto:yvoolab@gmail.com?subject=催款信" className="underline underline-offset-4 font-semibold">
+            <a href="mailto:yvoo@yvoolab.com?subject=催款信" className="underline underline-offset-4 font-semibold">
               把欠款情况发我，先告诉你这笔该走哪一步。
             </a>
           </p>

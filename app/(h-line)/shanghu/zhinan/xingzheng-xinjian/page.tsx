@@ -113,7 +113,7 @@ export default function Page() {
             拍照发来，当天用中文说明白：这封信是什么、急不急、该办什么、限期在哪。单封拆解；法语公文月月都有的，信箱管家——来信逐封替你盯着，急件当天到你手机。
           </p>
           <p className="mt-4">
-            <a href="mailto:yvoolab@gmail.com?subject=法国信件拆解" className="underline underline-offset-4 font-semibold">
+            <a href="mailto:yvoo@yvoolab.com?subject=法国信件拆解" className="underline underline-offset-4 font-semibold">
               把信拍照发我，先告诉你急不急。
             </a>
           </p>

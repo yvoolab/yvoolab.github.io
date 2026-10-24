@@ -44,8 +44,8 @@ export default function Home() {
         </p>
         <p className="mt-2">
           扫描件 OCR、复杂表格汇总、报表生成等需求 —— 发邮件到{" "}
-          <a href="mailto:yvoolab@gmail.com" className="font-semibold underline">
-            yvoolab@gmail.com
+          <a href="mailto:yvoo@yvoolab.com" className="font-semibold underline">
+            yvoo@yvoolab.com
           </a>{" "}
           报需求。
         </p>

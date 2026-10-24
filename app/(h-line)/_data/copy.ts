@@ -1,7 +1,7 @@
 // Shared H-line copy fragments, verbatim from menu-customer-version.md.
 
 export const CONTACT_LINE =
-  "邮箱 yvoolab@gmail.com · Facebook「Yvoo Lab」· Instagram @yvoolab";
+  "邮箱 yvoo@yvoolab.com · Facebook「Yvoo Lab」· Instagram @yvoolab";
 
 export const SLOGAN = "用得起的 AI，听得懂您的 Yvoolab。";
 
@@ -59,7 +59,7 @@ export const DIAGNOSIS_LINK_TEXT =
 // 验收修单 #9/#16：每页页脚回链免费小工具
 export const TOOLS_FOOTER_TEXT = "试试我们的免费小工具";
 
-// 验收修单 #4：主钮 mailto 统一构造（yvoolab@gmail.com + 预填 subject）
+// 验收修单 #4：主钮 mailto 统一构造（yvoo@yvoolab.com + 预填 subject）
 export function mailtoWithSubject(subject: string): string {
-  return `mailto:yvoolab@gmail.com?subject=${encodeURIComponent(subject)}`;
+  return `mailto:yvoo@yvoolab.com?subject=${encodeURIComponent(subject)}`;
 }

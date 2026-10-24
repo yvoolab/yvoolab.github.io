@@ -142,8 +142,8 @@ const CONTACTS: Array<{
 }> = [
   {
     label: "",
-    ariaLabel: "邮箱 yvoolab@gmail.com",
-    href: "mailto:yvoolab@gmail.com",
+    ariaLabel: "邮箱 yvoo@yvoolab.com",
+    href: "mailto:yvoo@yvoolab.com",
     icon: () => (
       // Gmail 红信封
       <svg viewBox="0 0 24 24" aria-hidden>

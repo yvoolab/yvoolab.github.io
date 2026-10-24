@@ -111,10 +111,10 @@ export default function ServicesPage() {
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href="mailto:yvoolab@gmail.com?subject=Project%20scope"
+            href="mailto:yvoo@yvoolab.com?subject=Project%20scope"
             className="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
           >
-            Email yvoolab@gmail.com
+            Email yvoo@yvoolab.com
           </a>
           <a
             href="https://github.com/yvoolab"
@@ -211,10 +211,10 @@ export default function ServicesPage() {
           a one-question follow-up. No discovery calls.
         </p>
         <a
-          href="mailto:yvoolab@gmail.com?subject=Project%20scope"
+          href="mailto:yvoo@yvoolab.com?subject=Project%20scope"
           className="mt-4 inline-block rounded-md bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-200"
         >
-          Email yvoolab@gmail.com
+          Email yvoo@yvoolab.com
         </a>
       </section>
     </div>
