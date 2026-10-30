@@ -63,7 +63,7 @@ const p: Product = {
     },
   ],
   faq,
-  buy: { label: "Buy on Etsy", href: "https://www.etsy.com/listing/4605829835" },
+  buy: { label: "Buy on Etsy (€9.90)", href: "https://www.etsy.com/listing/4605829835" },
   jsonLd: [
     {
       "@context": "https://schema.org",
