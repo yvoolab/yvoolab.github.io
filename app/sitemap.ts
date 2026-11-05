@@ -26,6 +26,7 @@ const FRESH = [
   "/shanghu/zhinan/cuikuan-xin",
   "/shanghu/zhinan/xingzheng-xinjian",
   "/shanghu/zhinan/shanghu-butie",
+  "/privacy",
 ];
 
 const PRODUCTS = [
