@@ -33,6 +33,7 @@ const PRODUCTS = [
   "/products/paycheck-budget-app",
   "/products/notion-life-planner",
   "/products/airbnb-welcome-guide",
+  "/paycheck-budget-demo", // 项目页（yvoolab/paycheck-budget-demo），同主机故入此图
 ];
 
 export const dynamic = "force-static";
