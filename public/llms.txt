@@ -1,0 +1,34 @@
+# Yvoolab
+
+> 巴黎华人商户的 AI 帮手——差评回复、催款信、法语公文、找补贴，AI 打草稿，您确认后才发出。
+
+用得起的 AI，听得懂您的 Yvoolab。主页：https://yvoolab.github.io/shanghu/
+
+- AI 打草稿，您确认后才发出
+- 您说中文就行，法语英语我们替您出面
+- 不要您的证件、账号和密码
+- 巴黎本地
+- 价格：按需报价
+- 这项服务是代读、代写与整理行政/商务信件的文书协助（écrivain public 性质），不是法律、会计或税务咨询。
+- 联系：邮箱 yvoo@yvoolab.com · Facebook「Yvoo Lab」· Instagram @yvoolab
+
+En français : assistant administratif & IA pour commerçants, Paris.
+
+## 服务
+
+- [差评回复管家](https://yvoolab.github.io/shanghu/chaping/): Google 上有评价的一切商家——餐馆、美甲、按摩、理发、烟草店、亚超、旅行社都算。没回的差评配好法语回复草稿，您过目就能发。
+- [Google 商家页整容](https://yvoolab.github.io/shanghu/shangjiaye/): 靠街坊客上门的店。照片、简介、营业时间、菜单信息一次修齐。
+- [外卖页面优化](https://yvoolab.github.io/shanghu/waimai/): 上了 Uber Eats / Deliveroo 的餐馆。菜单照片建议+法语菜品描述重写。
+- [询盘秒回](https://yvoolab.github.io/shanghu/xunpan/): 批发、外贸、装修队，凡靠邮件接单的生意。客户邮件 AI 打草稿、秒回您确认。
+- [报价单+催款信加速](https://yvoolab.github.io/shanghu/baojia/): 装修队、工匠、上门服务。法国报价单（devis）法定信息一次配齐 + 催款信法语代笔。
+- [AI 推荐体检](https://yvoolab.github.io/shanghu/tijian/): 查一遍您的店在 AI 眼里什么样：推不推荐您、说您什么、缺什么信息。
+- [商户找补贴](https://yvoolab.github.io/shanghu/butie/): 注册了公司的商户。官方申请条件整理成清单给您，您自己对照拿主意；要申的话申请书文字草稿代拟（您自己提交）。我们不抽成。
+- [Réponse aux avis Google (en français)](https://yvoolab.github.io/fr/shanghu/chaping/): Vos avis négatifs sur Google, toujours sans réponse ? Nous rédigeons vos réponses en français. Vous relisez, vous publiez.
+
+## 商户指南
+
+- [商户指南 · 差评、催款、行政信、补贴](https://yvoolab.github.io/shanghu/zhinan/)
+- [餐馆的 Google 差评怎么回复？模板与三条原则](https://yvoolab.github.io/shanghu/zhinan/google-chaping-huifu/)
+- [客户欠款不还怎么办？法语催款信的写法与节奏](https://yvoolab.github.io/shanghu/zhinan/cuikuan-xin/)
+- [收到法语行政信看不懂怎么办？先分轻重缓急](https://yvoolab.github.io/shanghu/zhinan/xingzheng-xinjian/)
+- [法国商户能申哪些补贴？先弄清三件事](https://yvoolab.github.io/shanghu/zhinan/shanghu-butie/)
