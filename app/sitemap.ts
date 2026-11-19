@@ -17,6 +17,8 @@ const STABLE = [
   "/shanghu/xunpan",
   "/shanghu/shangjiaye",
   "/fr/shanghu/chaping",
+  "/peixun",
+  "/fr/formation-ia",
 ];
 
 const FRESH = [

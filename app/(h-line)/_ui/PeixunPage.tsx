@@ -55,7 +55,7 @@ export function PeixunPage({ c }: { c: PeixunCopy }) {
             {c.menu.map((m, i) => (
               <li key={m.name} className="hl-panel rounded-sm p-5">
                 <p className="text-xs" style={muted}>
-                  {i + 1} · {m.hours}
+                  {i + 1} · {m.hours} · {m.price}
                   {m.required && <> · {c.requiredTag}</>}
                 </p>
                 <p className="hl-display mt-2 text-base">{m.name}</p>
